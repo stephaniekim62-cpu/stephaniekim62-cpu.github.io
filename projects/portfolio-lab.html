@@ -7,11 +7,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* VOICE: a student analyst's research note — exact, plain, every caveat stated.
-   IDEA: a page from a research binder, sharing the portfolio site's indigo cover.
-   PICTURE: the one interactive chart the project is about, at the top.
-   COLOUR and TYPE: indigo field, coral accent, categorical blue/orange/aqua for series; Fraunces + Hanken Grotesk.
-   LAYOUT: indigo hero with the finding and key figures, then the tool, then evidence, then method. */
+/* VOICE: an analyst's pitch book page — plain, exact, every caveat footnoted.
+   IDEA: a page from an investment banking deck: title, takeaway, exhibit, source line.
+   PICTURE: the project's one interactive exhibit, near the top.
+   COLOUR and TYPE: white, navy headings and table headers, orange and light blue only in charts; Source Sans 3.
+   LAYOUT: thin navy top rule, title and key figures, exhibits, then method and limitations. */
 :root{color-scheme:light dark;--bg:light-dark(#ffffff,#121433);--ink:light-dark(#121433,#eef0ff);--ink2:light-dark(#4a4d6b,#b8bbd8);--mute:light-dark(#6b6e8c,#9497b8);--rule:light-dark(#e2e3ef,#2b2e5c);--card:light-dark(#f5f6fc,#1a1d45);--grid:light-dark(#e8e9f2,#262a55);--field:#161a4a;--fieldInk:#eef0ff;--coral:#ff6b57;--s1:light-dark(#2a78d6,#3987e5);--s2:light-dark(#eb6834,#d95926);--s3:light-dark(#1baf7a,#199e70);--good:light-dark(#1d8a5e,#46c08a);--bad:light-dark(#c8402f,#ff7a68)}
 :root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
 *{box-sizing:border-box;min-width:0}
@@ -60,6 +60,15 @@ footer{background:var(--field);color:#9fa4d6;font-size:14px;padding:18px max(5vw
     <div class="kpi"><b>45 / 40 / 15</b><span>best return per unit of risk (stocks / bonds / gold)</span></div>
   </div>
 </div></section>
+<section class="band" style="padding-bottom:0"><div class="wrap">
+  <h2>About this project</h2>
+  <div class="g3">
+    <div><h3>What it is</h3><p class="ink2">An asset allocation study built from public data. I rebuilt monthly total returns for US stocks (S&amp;P 500 with dividends), 10-year Treasuries (from yields) and gold from January 1973 to September 2026, adjusted everything for inflation, and compared every mix of the three in 5% steps.</p></div>
+    <div><h3>Why I built it</h3><p class="ink2">Almost every investing conversation starts with asset allocation, and the 60/40 portfolio comes up constantly. Instead of taking it on faith, I wanted to test it on more than 50 years of real returns, including the 1970s inflation, the 2008 crisis and 2022, when stocks and bonds fell together.</p></div>
+    <div><h3>What I learned</h3><ul class="ink2" style="margin:.4em 0"><li>Diversification works because the assets didn't move together: the stock–bond correlation was 0.05 over the period.</li><li>The asset that protects you changes: bonds in 2008, gold in the 1970s, and neither in 2022.</li><li>Data choices matter. Monthly-average prices hide how deep crashes really were, so I state that limit up front.</li></ul></div>
+  </div>
+</div></section>
+
 
 <section class="band" id="mix"><div class="wrap">
   <h2>Build a mix and see how $10,000 would have grown</h2>
@@ -76,7 +85,7 @@ footer{background:var(--field);color:#9fa4d6;font-size:14px;padding:18px max(5vw
     </div>
     <div>
       <div class="fig" id="f1"><svg id="s1" role="img" aria-label="Growth of $10,000 after inflation, log scale"></svg><div class="tip" id="t1"></div></div>
-      <div class="legend"><span><i style="background:var(--ink)"></i>Your mix</span><span><i style="background:var(--s1)"></i>100% stocks</span><span><i style="background:var(--s2)"></i>60/40</span></div>
+      <div class="legend"><span><i style="background:var(--s2)"></i>Your mix</span><span><i style="background:var(--s1)"></i>100% stocks</span><span><i style="background:var(--s3)"></i>60/40</span></div>
       <p class="small">Growth of $10,000 in today's dollars (after inflation), January 1973 to September 2026, on a log scale, so equal steps mean equal percentage moves.</p>
     </div>
   </div>
@@ -87,7 +96,7 @@ footer{background:var(--field);color:#9fa4d6;font-size:14px;padding:18px max(5vw
     <h2>Every mix, plotted: the frontier bends</h2>
     <p class="ink2">Each dot is one of 231 mixes in 5% steps. Moving away from 100% stocks cuts risk faster than it cuts return at first, because the three assets barely moved together. The correlation between stocks and bonds over the period was 0.05, and between stocks and gold it was 0.00.</p>
     <div class="fig" style="min-height:300px"><svg id="s2" role="img" aria-label="Real return versus volatility for 231 mixes"></svg><div class="tip" id="t2"></div></div>
-    <p class="small">Horizontal axis: annual volatility. Vertical axis: real annual return. The large dark dot is your mix.</p>
+    <p class="small">Horizontal axis: annual volatility. Vertical axis: real annual return. The orange dot is your mix.</p>
   </div>
   <div>
     <h2>In a crisis, the diversifier changes</h2>
@@ -144,7 +153,7 @@ function update(){const w=[+ws.value,+wb.value,+wg.value],t=w[0]+w[1]+w[2]||1;
  draw1();draw2()}
 const s1=document.getElementById('s1'),t1=document.getElementById('t1');
 function draw1(){const W=s1.clientWidth,H=s1.clientHeight;if(!W||!cur)return;const nar=W<520;
- const L=nar?40:48,Rm=12,T=10,B=26,iw=W-L-Rm,ih=H-T-B;const lines=[[base.st.path,"var(--s1)"],[base.b6.path,"var(--s2)"],[cur.st.path,"var(--ink)"]];
+ const L=nar?40:48,Rm=12,T=10,B=26,iw=W-L-Rm,ih=H-T-B;const lines=[[base.st.path,"var(--s1)"],[base.b6.path,"var(--s3)"],[cur.st.path,"var(--s2)"]];
  let mx=0;lines.forEach(l=>l[0].forEach(v=>mx=Math.max(mx,v)));const lo=Math.log(0.6),hi=Math.log(mx*1.1);
  const x=i=>L+i/n*iw,y=v=>T+(1-(Math.log(v)-lo)/(hi-lo))*ih;let o="";
  [1,2,5,10,20,50,100].forEach(v=>{if(v>=0.6&&v<=mx*1.1)o+=`<line x1="${L}" x2="${L+iw}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="var(--mute)">$${v*10}K</text>`});
@@ -153,7 +162,7 @@ function draw1(){const W=s1.clientWidth,H=s1.clientHeight;if(!W||!cur)return;con
  o+=`<line id="x1" y1="${T}" y2="${T+ih}" stroke="var(--ink2)" visibility="hidden"/><rect x="${L}" y="${T}" width="${iw}" height="${ih}" fill="transparent" id="h1"/>`;
  s1.innerHTML=o;const h=s1.querySelector('#h1'),xl=s1.querySelector('#x1');
  h.onpointermove=e=>{const r=s1.getBoundingClientRect(),i=Math.max(0,Math.min(n,Math.round((e.clientX-r.left-L)/iw*n)));xl.setAttribute('x1',x(i));xl.setAttribute('x2',x(i));xl.setAttribute('visibility','visible');
-  const f=v=>"$"+(v*10).toFixed(1)+"K";t1.style.display='block';t1.innerHTML=`<b>${i?dates[i-1]:"1972-12"}</b><br><span style="color:var(--ink)">━</span> Your mix ${f(cur.st.path[i])}<br><span style="color:var(--s1)">━</span> Stocks ${f(base.st.path[i])}<br><span style="color:var(--s2)">━</span> 60/40 ${f(base.b6.path[i])}`;
+  const f=v=>"$"+(v*10).toFixed(1)+"K";t1.style.display='block';t1.innerHTML=`<b>${i?dates[i-1]:"1972-12"}</b><br><span style="color:var(--s2)">━</span> Your mix ${f(cur.st.path[i])}<br><span style="color:var(--s1)">━</span> Stocks ${f(base.st.path[i])}<br><span style="color:var(--s3)">━</span> 60/40 ${f(base.b6.path[i])}`;
   const tx=x(i)+12;t1.style.left=(tx+160>W?x(i)-172:tx)+'px';t1.style.top='14px'};
  h.onpointerleave=()=>{t1.style.display='none';xl.setAttribute('visibility','hidden')}}
 const s2=document.getElementById('s2'),t2=document.getElementById('t2');
@@ -161,10 +170,10 @@ function draw2(){const W=s2.clientWidth,H=s2.clientHeight;if(!W||!cur)return;con
  const L=44,Rm=14,T=10,B=30,iw=W-L-Rm,ih=H-T-B;const x=v=>L+(v-.04)/(.18-.04)*iw,y=v=>T+(1-(v-.015)/(.075-.015))*ih;let o="";
  for(let v=.02;v<=.07;v+=.01)o+=`<line x1="${L}" x2="${L+iw}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="var(--mute)">${Math.round(v*100)}%</text>`;
  for(let v=.06;v<=.18;v+=.04)o+=`<text x="${x(v)}" y="${T+ih+18}" text-anchor="middle" font-size="12" fill="var(--mute)">${Math.round(v*100)}% vol</text>`;
- F.forEach((f,i)=>o+=`<circle cx="${x(f[4])}" cy="${y(f[3])}" r="5" fill="var(--s1)" fill-opacity=".45" data-i="${i}"/>`);
+ F.forEach((f,i)=>o+=`<circle cx="${x(f[4])}" cy="${y(f[3])}" r="5" fill="var(--s3)" fill-opacity=".55" data-i="${i}"/>`);
  const lab=[["Stocks",[1,0,0]],["Bonds",[0,1,0]],["Gold",[0,0,1]],["60/40",[.6,.4,0]]];
  lab.forEach(([t,w])=>{const f=F.find(r=>Math.abs(r[0]-w[0])<.01&&Math.abs(r[1]-w[1])<.01);o+=`<text x="${x(f[4])+8}" y="${y(f[3])+4}" font-size="12.5" fill="var(--ink2)">${t}</text>`});
- const c=cur.st;o+=`<circle cx="${x(c.vol)}" cy="${y(c.real)}" r="8" fill="var(--ink)" stroke="var(--bg)" stroke-width="2.5"/>`;
+ const c=cur.st;o+=`<circle cx="${x(c.vol)}" cy="${y(c.real)}" r="8" fill="var(--s2)" stroke="var(--bg)" stroke-width="2.5"/>`;
  s2.innerHTML=o;s2.querySelectorAll('circle[data-i]').forEach(el=>{el.onpointerenter=e=>{const f=F[el.dataset.i];t2.style.display='block';t2.innerHTML=`<b>${Math.round(f[0]*100)} / ${Math.round(f[1]*100)} / ${Math.round(f[2]*100)}</b><br>Real return ${pct(f[3])}<br>Volatility ${pct(f[4])}<br>Worst decline ${pct(f[5],0)}`;const cx=+el.getAttribute('cx');t2.style.left=(cx+150>W?cx-160:cx+10)+'px';t2.style.top=(+el.getAttribute('cy')-10)+'px'};el.onpointerleave=()=>t2.style.display='none'})}
 const ro1=new ResizeObserver(draw1);ro1.observe(s1);const ro2=new ResizeObserver(draw2);ro2.observe(s2);
 [ws,wb,wg].forEach(el=>el.oninput=update);

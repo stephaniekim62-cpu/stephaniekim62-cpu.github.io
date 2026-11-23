@@ -48,7 +48,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--s1);outline-off
 .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,44px)}
 .grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
 .grid4>div{background:var(--bg);padding:16px}
-@media(max-width:860px){.grid2{grid-template-columns:minmax(0,1fr)}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:860px){.grid2{grid-template-columns:minmax(0,1fr)!important}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.grid4{grid-template-columns:minmax(0,1fr)}.kpis{grid-template-columns:minmax(0,1fr)}}
 .rows{display:grid;gap:7px}.row{display:grid;grid-template-columns:11em minmax(0,1fr) 4.5em;gap:10px;align-items:center;font-size:14px}
 .row .bar{height:12px;background:var(--grid);position:relative}.row .bar i{position:absolute;inset:0 auto 0 0;background:var(--s1);border-radius:0 4px 4px 0}
@@ -95,7 +95,17 @@ pre,.scroll{overflow-x:auto}.scroll a{flex:none}html{scroll-padding-top:72px}
   </div>
 </div></header>
 
-<nav class="scroll"><a href="#client">Client</a><a href="#issues">Key issues</a><a href="#ips">Policy statement</a><a href="#stock">Stock plan</a><a href="#alloc">Allocation</a><a href="#art">Art &amp; estate</a><a href="#monitor">Monitoring</a><a href="#sources">Assumptions</a></nav>
+<nav class="scroll"><a href="#about-project">About</a><a href="#client">Client</a><a href="#issues">Key issues</a><a href="#ips">Policy statement</a><a href="#stock">Stock plan</a><a href="#alloc">Allocation</a><a href="#art">Art &amp; estate</a><a href="#monitor">Monitoring</a><a href="#sources">Assumptions</a></nav>
+
+<section class="band" id="about-project"><div class="wrap">
+  <h2>About this project</h2>
+  <div class="grid2" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+    <div><h3>What it is</h3><p class="ink2">A full client proposal of the kind a private bank prepares: a balance sheet review, an investment policy statement, a plan to unwind a concentrated stock position, a diversified portfolio built on J.P. Morgan's published 2027 market forecasts, and a retirement simulation. The family is fictional, but every market input is real and sourced.</p></div>
+    <div><h3>Why I built it</h3><p class="ink2">I'm recruiting for wealth management and private banking roles, and I wanted to practice the core of the job: turning a family's situation into a plan they can understand and follow. The art collection section draws on my summer researching the Korean art market at Seoul Auction Blue.</p></div>
+    <div><h3>Real-world evidence</h3><p class="ink2">Concentration is risky even in good companies. Studying every US stock since 1926, finance professor Hendrik Bessembinder found that most individual stocks earned less than one-month Treasury bills over their lifetimes, and that about 4% of companies account for all of the stock market's net wealth creation. Holding one stock is a bet on being in that 4%.</p></div>
+  </div>
+  <p class="small">Sources: Bessembinder, "Do Stocks Outperform Treasury Bills?", Journal of Financial Economics, 2018; J.P. Morgan Asset Management, 2027 Long-Term Capital Market Assumptions.</p>
+</div></section>
 
 <section class="band" id="client"><div class="wrap grid2">
   <div>
