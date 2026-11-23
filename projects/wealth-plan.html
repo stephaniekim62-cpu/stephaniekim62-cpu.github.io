@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Han Family Wealth Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: a private-bank client proposal — calm, exact, numbers first, every assumption shown.
+   IDEA: the bound proposal book an advisor walks a family through, page by page.
+   PICTURE: a live Monte Carlo line chart — plan still funded, by age — concentrated vs diversified.
+   COLOUR and TYPE: white/black, concrete planes, safety yellow on the one result; Hanken Grotesk.
+   LAYOUT: modest title, finding + chart in the first screen, then the proposal's sections in order. */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#1a1a19);--ink:light-dark(#0b0b0b,#f0efec);--ink2:light-dark(#52514e,#c3c2b7);--mute:light-dark(#77766f,#9a998f);--plane:light-dark(#d8d8d4,#2a2a28);--plane2:light-dark(#efefec,#232321);--rule:light-dark(#d8d8d4,#3a3a37);--hi:#ffe600;--s1:light-dark(#2a78d6,#3987e5);--s2:light-dark(#eb6834,#d95926);--s3:light-dark(#1baf7a,#199e70);--grid:light-dark(#e6e6e2,#33332f)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Hanken Grotesk",system-ui,sans-serif;overflow-x:clip}
+.band{padding:clamp(28px,4vw,64px) max(5vw,16px)}.wrap{max-width:1240px;margin:0 auto}
+.plane{background:var(--plane2)}
+h1{font-weight:500;font-size:clamp(30px,4.2vw,48px);line-height:1.05;text-wrap:balance;margin:.2em 0 .35em;max-width:20ch}
+h2{font-weight:500;font-size:clamp(24px,2.6vw,32px);line-height:1.1;text-wrap:balance;margin:0 0 .5em;max-width:28ch}
+h3{font-weight:600;font-size:17px;margin:0 0 .3em}
+p{max-width:68ch;margin:.4em 0 .9em}.small{font-size:13px;color:var(--mute)}.ink2{color:var(--ink2)}
+.meta{font-size:14px;color:var(--ink2);display:flex;flex-wrap:wrap;gap:6px 22px}
+nav.scroll{display:flex;gap:18px;padding:10px max(5vw,16px);border-block:1px solid var(--rule);font-size:14px;white-space:nowrap;background:var(--bg)}
+nav a{color:var(--ink2);text-decoration:none}nav a:hover{color:var(--ink)}
+@media(min-width:900px){nav.scroll{position:sticky;top:0;z-index:5}}
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,3vw,48px);align-items:start}
+@media(max-width:860px){.hero{grid-template-columns:minmax(0,1fr)}}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:18px 0}
+.kpi{background:var(--bg);padding:14px 14px 12px}.kpi b{display:inline-block;font-weight:500;font-size:clamp(20px,2.1vw,26px);line-height:1.15;white-space:nowrap;margin-bottom:4px}
+.kpi span{display:block;font-size:13px;line-height:1.35;color:var(--ink2)}.kpi.on b{background:linear-gradient(transparent 62%,var(--hi) 62%);color:#0b0b0b;padding:0 2px}
+:root:not([data-theme=light]) .kpi.on b{color:var(--ink)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .kpi.on b{background:none;border-bottom:4px solid var(--hi)}}
+:root[data-theme=dark] .kpi.on b{background:none;border-bottom:4px solid var(--hi)}
+.controls{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:end;margin-bottom:10px}
+.controls label{font-size:13px;color:var(--ink2);display:grid;gap:4px}
+.seg{display:inline-flex;border:1px solid var(--ink);}
+.seg button{font:inherit;font-size:14px;min-height:40px;padding:0 12px;border:0;background:var(--bg);color:var(--ink);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+input[type=range]{width:180px;accent-color:var(--ink);min-height:32px}
+button:focus-visible,input:focus-visible{outline:2px solid var(--s1);outline-offset:2px}
+.fig{position:relative;min-height:330px}.fig>svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--ink2);margin-top:6px}
+.legend i{display:inline-block;width:18px;height:2px;vertical-align:middle;margin-right:6px}
+.tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--rule);padding:8px 10px;font-size:13px;line-height:1.35;white-space:nowrap;box-shadow:0 2px 10px #0002;display:none;z-index:2}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,44px)}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.grid4>div{background:var(--bg);padding:16px}
+@media(max-width:860px){.grid2{grid-template-columns:minmax(0,1fr)}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.grid4{grid-template-columns:minmax(0,1fr)}.kpis{grid-template-columns:minmax(0,1fr)}}
+.rows{display:grid;gap:7px}.row{display:grid;grid-template-columns:11em minmax(0,1fr) 4.5em;gap:10px;align-items:center;font-size:14px}
+.row .bar{height:12px;background:var(--grid);position:relative}.row .bar i{position:absolute;inset:0 auto 0 0;background:var(--s1);border-radius:0 4px 4px 0}
+.row .v{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:520px){.row{grid-template-columns:8.5em minmax(0,1fr) 4em;font-size:13px}}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:8px 10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+th{font-weight:600;font-size:13px;color:var(--ink2)}td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tfoot td{font-weight:600;border-bottom:0;border-top:2px solid var(--ink)}
+.swatch{display:inline-block;width:10px;height:10px;margin-right:7px;vertical-align:baseline}
+dl.ips{display:grid;grid-template-columns:11em minmax(0,1fr);margin:0;border-top:1px solid var(--rule)}
+dl.ips dt,dl.ips dd{padding:10px 0;border-bottom:1px solid var(--rule);margin:0}dl.ips dt{font-weight:600}
+@media(max-width:600px){dl.ips{grid-template-columns:minmax(0,1fr)}dl.ips dt{border:0;padding-bottom:0}}
+ul{padding-left:1.1em;margin:.3em 0 .8em}li{margin:.25em 0;max-width:68ch}
+a{color:var(--s1)}
+details{border-top:1px solid var(--rule);padding-top:10px}summary{cursor:pointer;font-weight:600;min-height:32px}
+pre,.scroll{overflow-x:auto}.scroll a{flex:none}html{scroll-padding-top:72px}
+@media(max-width:600px){table{font-size:13px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--rule)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:7.5em;margin-inline-start:-8em;white-space:normal;color:var(--ink2);font-size:12px}.stack td:empty{display:none}}
+</style><script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script></head>
+<body>
+
+<header class="band" style="padding-bottom:18px"><div class="wrap">
+  <div class="meta"><a href="../index.html#projects" style="color:var(--ink);font-weight:600;text-decoration:none">← Stephanie Kim · Projects</a><span>Wealth management case study</span><a href="https://colab.research.google.com/github/stephaniekim62-cpu/stephaniekim62-cpu.github.io/blob/main/notebooks/wealth_plan.ipynb" style="color:var(--ink)">Open the model notebook in Colab</a><span>Prepared by Stephanie Kim</span><span>November 2026</span></div>
+  <div class="hero" style="margin-top:14px">
+    <div>
+      <h1>Diversifying one stock lifts the Han family's retirement odds from <span id="h-c">79%</span> to <span id="h-p">98%</span></h1>
+      <p class="ink2">A proposal for a hypothetical family with $17.2M net worth, half of their liquid wealth in one employer's stock, a $2.2M art collection, and a target to retire at 62. It costs about $0.63M in federal tax to fix the concentration. The simulation says it is worth paying.</p>
+      <div class="kpis">
+        <div class="kpi"><b>49% → 5%</b><span>single-stock share of liquid assets</span></div>
+        <div class="kpi on"><b id="k-succ">98%</b><span>plan success, proposed portfolio</span></div>
+        <div class="kpi"><b>$0.63M</b><span>est. federal tax on the sell-down, 2027–29</span></div>
+      </div>
+      <p class="small">Fictional client; all personal figures invented for illustration. Market assumptions sourced below.</p>
+    </div>
+    <div>
+      <div class="controls">
+        <label>Market assumptions<span class="seg" role="group"><button id="cma-j" aria-pressed="true">J.P. Morgan 2027</button><button id="cma-s" aria-pressed="false">Skeptic case</button></span></label>
+        <label><span>Retirement spending, after tax: <b id="o-sp">$480K</b></span><input id="sp" type="range" min="300" max="700" step="10" value="480"></label>
+        <label><span>Retire at: <b id="o-ra">62</b></span><input id="ra" type="range" min="58" max="67" step="1" value="62"></label>
+      </div>
+      <div class="fig" id="fig1"><svg id="s1" role="img" aria-label="Share of simulations in which the plan is still funded, by age"></svg><div class="tip" id="tip"></div></div>
+      <div class="legend"><span><i style="background:var(--s1)"></i>Proposed diversified portfolio</span><span><i style="background:var(--s2)"></i>Stay concentrated (49% employer stock)</span></div>
+      <p class="small">Share of 4,000 simulated markets in which the family still has money, by age. Spending rises with 2.5% inflation; $300K/yr saved until retirement; $80K/yr Social Security from 67.</p>
+    </div>
+  </div>
+</div></header>
+
+<nav class="scroll"><a href="#client">Client</a><a href="#issues">Key issues</a><a href="#ips">Policy statement</a><a href="#stock">Stock plan</a><a href="#alloc">Allocation</a><a href="#art">Art &amp; estate</a><a href="#monitor">Monitoring</a><a href="#sources">Assumptions</a></nav>
+
+<section class="band" id="client"><div class="wrap grid2">
+  <div>
+    <h2>The family: high income, rich on paper, exposed to one chip company</h2>
+    <p><b>Daniel Han, 54,</b> is a senior vice president at Meridian Semiconductor, a fictional listed chipmaker. He earns about $650K in salary and bonus plus roughly $800K a year in stock grants. <b>Grace Han, 52,</b> trained in gallery work and manages the family's collection of Dansaekhwa and contemporary Korean painting. They have two children, 17 and 14, and live in New York.</p>
+    <p>Their goals: retire at 62 without cutting their lifestyle, pay for college, help the children later in life, and give to Korean arts education.</p>
+    <p class="ink2">Daniel's career, his annual bonus and $6.0M of their savings all depend on the same company. If the semiconductor cycle turns, all three get hit together.</p>
+  </div>
+  <div>
+    <h3>Balance sheet ($M)</h3>
+    <div class="rows" id="bs"></div>
+    <table style="margin-top:14px"><tbody>
+      <tr><td>Total assets</td><td class="n">$18.3M</td></tr><tr><td>Mortgage</td><td class="n">−$1.1M</td></tr>
+      <tr><td><b>Net worth</b></td><td class="n"><b>$17.2M</b></td></tr><tr><td>Liquid investable (stock + brokerage + retirement + cash)</td><td class="n">$12.2M</td></tr>
+    </tbody></table>
+  </div>
+</div></section>
+
+<section class="band plane" id="issues"><div class="wrap">
+  <h2>Four problems, in order of how much damage they can do</h2>
+  <div class="grid4">
+    <div><h3>1. Concentration</h3><p class="ink2">49% of liquid wealth in one stock with roughly 35% annual volatility. A 40% fall would take $2.4M off the plan, likely in the same year Daniel's bonus shrinks.</p></div>
+    <div><h3>2. Embedded gains</h3><p class="ink2">Cost basis is about $1.2M on $6.0M. Selling everything at once triggers about $1.1M of federal tax. The tax cost is the reason they haven't sold.</p></div>
+    <div><h3>3. Retirement funding</h3><p class="ink2">They need about $480K a year after tax, starting in 8 years and lasting possibly 35 years. That needs reliable growth and a cash reserve so they never sell in a downturn.</p></div>
+    <div><h3>4. Illiquid assets</h3><p class="ink2">The art and the home make up 33% of net worth. The art is not covered by any insurance schedule, has no current appraisal, and the will doesn't say who gets it.</p></div>
+  </div>
+</div></section>
+
+<section class="band" id="ips"><div class="wrap grid2">
+  <div>
+    <h2>Investment policy statement, in brief</h2>
+    <p class="ink2">The policy sets the rules before markets test them. Every recommendation in this proposal follows from it.</p>
+    <p class="small">Required return: about 3.6% a year in nominal terms just to fund the spending plan to age 95 in a straight-line projection. The proposed portfolio is expected to compound at 7.4% under J.P. Morgan's assumptions. That leaves room for bad sequences.</p>
+  </div>
+  <dl class="ips">
+    <dt>Return objective</dt><dd>Fund $480K/yr after-tax spending from 62, inflation-adjusted, with a ≥ 90% simulated success rate; grow the surplus for the children.</dd>
+    <dt>Risk tolerance</dt><dd>Above average in ability (large surplus, long horizon), moderate in willingness. Grace was uncomfortable with the 2022 drawdown. Portfolio volatility target is about 10%.</dd>
+    <dt>Time horizon</dt><dd>Two stages: 8 years of saving, then 30+ years of spending.</dd>
+    <dt>Liquidity</dt><dd>12 months of spending in cash now; two years ($1.2M) in T-bills and short munis by retirement. Tuition comes from the 529 plans.</dd>
+    <dt>Taxes</dt><dd>Top federal bracket. Bonds held in the taxable account go into municipal bonds. Gains are realized gradually across tax years, and losses are harvested.</dd>
+    <dt>Legal and regulatory</dt><dd>Daniel is a corporate insider. All sales go through a Rule 10b5-1 plan, which has a 90-day cooling-off period, and are pre-cleared with the company's general counsel.</dd>
+    <dt>Unique circumstances</dt><dd>Concentrated employer stock, an art collection, and a wish to give to Korean arts education.</dd>
+  </dl>
+</div></section>
+
+<section class="band plane" id="stock"><div class="wrap">
+  <h2>The stock plan: four tools, staged over three tax years</h2>
+  <p class="ink2">Selling everything at once wastes money on tax. Holding everything keeps the risk. The plan splits the $6.0M position by the job each tool does best.</p>
+  <div class="scroll"><table class="stack">
+    <thead><tr><th>Tool</th><th class="n">Amount</th><th>Timing</th><th class="n">Est. federal tax</th><th>Why, and the catch</th></tr></thead>
+    <tbody>
+      <tr><td>Donor-advised fund gift of the lowest-basis shares</td><td class="n">$0.6M</td><td>Dec 2026</td><td class="n">$0</td><td>Avoids the gain entirely and pre-funds 10+ years of arts giving. The deduction is limited to a share of income (AGI); confirm the 2026 rules with their CPA.</td></tr>
+      <tr><td>Exchange fund contribution</td><td class="n">$1.5M</td><td>Q1 2027</td><td class="n">Deferred</td><td>Swaps the shares for a stake in a diversified pool with no sale, so no tax now. Requires a 7-year hold and qualified-purchaser status, and the fees are higher.</td></tr>
+      <tr><td>Rule 10b5-1 scheduled sales</td><td class="n">$3.3M</td><td>2027–29, $1.1M/yr</td><td class="n">≈ $0.63M</td><td>The gain is 80% of each sale, taxed at 23.8% (20% capital gains + 3.8% NIIT). Spreading sales over 3 years avoids a single bad sale price. State tax not shown.</td></tr>
+      <tr><td>Retain</td><td class="n">$0.6M</td><td>Ongoing</td><td class="n">—</td><td>About 5% of liquid assets, which keeps Daniel's exposure to his employer meaningful but survivable. A protective collar only if the company's anti-hedging policy allows it; many forbid it for officers.</td></tr>
+      <tr><td>New stock grants</td><td class="n">~$0.8M/yr</td><td>Sell at vest</td><td class="n">Small</td><td>Vesting is already taxed as income, so basis resets. Selling at vest stops the concentration from coming back.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">Tax estimate: $3.3M sold × 80% gain × 23.8% = $0.628M. Post-plan liquid assets ≈ $12.2M − $0.6M gift − $0.63M tax ≈ $11.0M, used as the starting value for the proposed portfolio.</p>
+</div></section>
+
+<section class="band" id="alloc"><div class="wrap">
+  <h2>The core portfolio: 45% public equity, 29% bonds, 23% alternatives, 3% cash</h2>
+  <div class="grid2">
+    <div>
+      <div class="rows" id="al"></div>
+      <div class="legend" style="margin-top:12px"><span><span class="swatch" style="background:var(--s1)"></span>Equity</span><span><span class="swatch" style="background:var(--s2)"></span>Fixed income</span><span><span class="swatch" style="background:var(--s3)"></span>Alternatives</span><span><span class="swatch" style="background:var(--mute)"></span>Cash</span></div>
+      <p class="ink2" style="margin-top:16px">This is J.P. Morgan's "60/40+" idea adjusted for a taxable family. Alternatives are kept to 23% because private equity locks money up for years and the family already owns illiquid art. The exchange fund counts toward US large cap.</p>
+    </div>
+    <div>
+      <div class="scroll"><table>
+        <thead><tr><th>Asset class</th><th class="n">Weight</th><th class="n">JPM 2027</th><th class="n">Skeptic</th><th class="n">Vol*</th></tr></thead>
+        <tbody id="cmaT"></tbody>
+        <tfoot><tr><td>Portfolio (compound)</td><td class="n">100%</td><td class="n" id="pj"></td><td class="n" id="ps"></td><td class="n" id="pv"></td></tr></tfoot>
+      </table></div>
+      <p class="small">Expected annual compound returns over 10–15 years. *Volatilities and correlations are the author's assumptions, because published coverage of the 2027 edition doesn't include them. Non-US developed and cash returns are also assumptions. The skeptic case uses the midpoints of Vanguard's 10-year ranges for public assets and cuts the alternatives returns by about 1.6–2.8 points.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="band plane" id="art"><div class="wrap grid2">
+  <div>
+    <h2>Art and estate: treat the collection as an asset, not décor</h2>
+    <ul>
+      <li><b>Appraise and insure.</b> Get a qualified appraisal now and every 3–5 years, list each work on a fine-art insurance schedule, and keep provenance files.</li>
+      <li><b>Know the tax.</b> Gains on sold art are taxed as collectibles at up to 28%, more than stocks. Donating it or leaving it in the estate usually beats selling.</li>
+      <li><b>Use it for liquidity.</b> An art-secured credit line can cover a cash need during a trading blackout instead of a forced stock sale.</li>
+      <li><b>Name the heirs.</b> Leave specific works to specific people in the will, and consider leaving one work to a museum.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Estate math</h3>
+    <p>The 2026 federal estate and gift exemption is $15M per person ($30M per couple). It no longer has an expiry date and is indexed to inflation from 2027. At $17.2M, the Hans are under the federal line, so the focus shifts:</p>
+    <ul>
+      <li>New York has its own estate tax with a much lower threshold, so state-level planning comes first.</li>
+      <li>Annual exclusion gifts of $19,000 per donor per child, or $76K/yr in total, move growth out of the estate.</li>
+      <li>The low-basis shares they keep get a step-up in basis at death, so there is little tax reason to give them away during life.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="band" id="monitor"><div class="wrap grid2">
+  <div>
+    <h2>Implementation and monitoring</h2>
+    <ul>
+      <li><b>Rebalancing:</b> each asset class within ±5 points of target (±20% of target for small sleeves), checked quarterly. Use new cash before selling anything.</li>
+      <li><b>Asset location:</b> high yield, hedge funds and taxable bonds go in the 401(k)/IRA; munis and equity index funds go in the taxable account.</li>
+      <li><b>Tax-loss harvesting</b> in the taxable account to offset gains from the stock sales.</li>
+      <li><b>Benchmark:</b> a blended index at policy weights, net of fees.</li>
+      <li><b>Spending guardrail:</b> if the portfolio falls 20% below plan, trim spending 10% until it recovers. This is the main defense in the skeptic case.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Review calendar</h3>
+    <table><tbody>
+      <tr><td>Quarterly</td><td>Performance, drift vs. bands, 10b5-1 sales executed</td></tr>
+      <tr><td>Annually</td><td>Policy statement refresh, tax plan with their CPA, insurance and appraisal check</td></tr>
+      <tr><td>Life events</td><td>Job change, college starts, retirement date moves, inheritance</td></tr>
+      <tr><td>2034</td><td>Exchange fund lockup ends; build the 2-year cash reserve for retirement</td></tr>
+    </tbody></table>
+  </div>
+</div></section>
+
+<section class="band plane" id="sources"><div class="wrap">
+  <h2>Assumptions and sources</h2>
+  <div class="grid2">
+    <ul class="small" style="color:var(--ink2)">
+      <li>J.P. Morgan Asset Management, 2027 Long-Term Capital Market Assumptions (31st edition, Oct 2026). Asset-class figures as reported by WealthBriefing, "JP Morgan Raises Long-Term Capital Market Return Forecast," 21 Oct 2026.</li>
+      <li>Vanguard, 2026 Economic and Market Outlook (Dec 2025) and VCMM 10-year forecasts (Jan 2026), used for the skeptic case.</li>
+      <li>IRS 2026 inflation adjustments ($15M estate and gift exemption, $19,000 annual exclusion) as summarized by Morgan Lewis (Oct 2025) and Katten (2026).</li>
+    </ul>
+    <ul class="small" style="color:var(--ink2)">
+      <li>Monte Carlo: 4,000 paths, yearly lognormal portfolio returns, ages 54–95, 2.5% inflation, withdrawals grossed up at a 20% effective tax rate.</li>
+      <li>Single stock: same expected average return as US large cap plus 1.5 points for its higher market sensitivity, with 35% volatility and 0.6 correlation to the market. Volatility drag lowers its typical (median) outcome to about 4.2% a year.</li>
+      <li>Concentrated case: 49% stock and the rest in a 60/30/10 mix of US large cap, Treasuries and cash, starting at $12.2M with no sale tax paid.</li>
+      <li>This is an educational case study, not investment, tax or legal advice.</li>
+    </ul>
+  </div>
+</div></section>
+
+<script>
+{
+const N=["US large cap","Non-US developed","Emerging mkt equity","US interm. Treasuries","US investment-grade credit","US high yield","Private equity","US core real estate","Diversified hedge funds","Global core infrastructure","Cash"];
+const K=[0,0,0,1,1,1,2,2,2,2,3];
+const JPM=[7.5,7.3,7.1,4.6,6.1,6.7,9.8,8.1,6.7,7.1,3.3], SK=[4.9,5.9,5.9,4.3,4.5,5.4,7.0,6.0,5.0,5.5,3.0];
+const V=[16,17,21,5,7,9,20,11,7,10,0.5], W=[28,12,5,10,15,4,8,6,6,3,3];
+const ASSUME=[false,true,false,false,false,false,false,false,false,false,true];
+const C=Array.from({length:11},(_,i)=>Array.from({length:11},(_,j)=>i===j?1:0));
+const s=(i,j,v)=>{C[i][j]=C[j][i]=v};
+s(0,1,.85);s(0,2,.72);s(1,2,.80);
+for(const e of [0,1,2]){s(e,3,-.05);s(e,4,.35);s(e,5,.70);s(e,6,.75);s(e,7,.45);s(e,8,.75);s(e,9,.60);s(e,10,0)}
+s(3,4,.70);s(3,5,.15);s(4,5,.55);s(3,6,-.05);s(4,6,.30);s(5,6,.65);s(3,7,.10);s(4,7,.30);s(5,7,.45);s(6,7,.55);
+s(3,8,0);s(4,8,.40);s(5,8,.70);s(6,8,.65);s(7,8,.40);s(3,9,.25);s(4,9,.45);s(5,9,.55);s(6,9,.55);s(7,9,.65);s(8,9,.50);s(3,10,.1);
+function stats(g){let a=0,va=0;for(let i=0;i<11;i++){const vi=V[i]/100;a+=W[i]/100*(g[i]/100+vi*vi/2);for(let j=0;j<11;j++)va+=W[i]*W[j]/1e4*vi*V[j]/100*C[i][j]}return[a-va/2,Math.sqrt(va)]}
+function conc(g){const v=[.35,.16,.05,.005],w=[.49,.306,.153,.051],aLC=g[0]/100+.0128;const a=[aLC+.015,aLC,g[3]/100+.00125,g[10]/100];
+ const Cc=[[1,.6,-.05,0],[.6,1,-.05,0],[-.05,-.05,1,.1],[0,0,.1,1]];let m=0,va=0;for(let i=0;i<4;i++){m+=w[i]*a[i];for(let j=0;j<4;j++)va+=w[i]*w[j]*v[i]*v[j]*Cc[i][j]}return[m-va/2,Math.sqrt(va)]}
+const pct=x=>(x*100).toFixed(1)+"%";
+const sj=stats(JPM),ss=stats(SK);
+document.getElementById('pj').textContent=pct(sj[0]);document.getElementById('ps').textContent=pct(ss[0]);document.getElementById('pv').textContent=pct(sj[1]);
+const col=["var(--s1)","var(--s2)","var(--s3)","var(--mute)"];
+document.getElementById('cmaT').innerHTML=N.map((n,i)=>`<tr><td><span class="swatch" style="background:${col[K[i]]}"></span>${n}</td><td class="n">${W[i]}%</td><td class="n">${JPM[i].toFixed(1)}%${ASSUME[i]?"*":""}</td><td class="n">${SK[i].toFixed(1)}%</td><td class="n">${V[i]}%</td></tr>`).join('');
+document.getElementById('al').innerHTML=N.map((n,i)=>`<div class="row"><span>${n}</span><span class="bar"><i style="width:${W[i]/28*100}%;background:${col[K[i]]}"></i></span><span class="v">${W[i]}%</span></div>`).join('');
+const BS=[["Employer stock",6.0,1],["Primary residence",3.5],["Taxable brokerage",3.2],["401(k) / IRA",2.4],["Art collection",2.2],["Cash",0.6],["529 plans",0.4]];
+document.getElementById('bs').innerHTML=BS.map(([n,v,h])=>`<div class="row"><span>${n}</span><span class="bar"><i style="width:${v/6*100}%;background:${h?"var(--s2)":"var(--s1)"}"></i></span><span class="v">$${v.toFixed(1)}M</span></div>`).join('');
+
+// Monte Carlo with common random numbers
+function rng(a){return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const P=4000,Y=42,Z=new Float32Array(P*Y);{const r=rng(7);for(let k=0;k<P*Y;k+=2){const u=Math.max(r(),1e-12),v=r(),m=Math.sqrt(-2*Math.log(u));Z[k]=m*Math.cos(2*Math.PI*v);if(k+1<P*Y)Z[k+1]=m*Math.sin(2*Math.PI*v)}}
+function mc([g,sig],start,spend,ra){const lg=Math.log(1+g),alive=new Array(Y+1).fill(0),ends=[];
+ for(let p=0;p<P;p++){let w=start,ok=true;alive[0]++;
+  for(let t=0;t<Y;t++){const age=54+t,inf=Math.pow(1.025,t);const flow=age<ra?300e3*inf:-(spend/0.8-(age>=67?80e3/0.8:0))*inf;
+   w=w*Math.exp(lg+sig*Z[p*Y+t])+flow;if(w<=0){w=0;ok=false}if(ok)alive[t+1]++}
+  ends.push(w/Math.pow(1.025,Y))}
+ ends.sort((a,b)=>a-b);return{alive:alive.map(a=>a/P),succ:alive[Y]/P,p:[.1,.5,.9].map(q=>ends[Math.floor(q*P)])}}
+let cma="j",res;
+const svg=document.getElementById('s1'),tip=document.getElementById('tip');
+function run(){const g=cma==="j"?JPM:SK,sp=+document.getElementById('sp').value*1e3,ra=+document.getElementById('ra').value;
+ document.getElementById('o-sp').textContent="$"+(sp/1e3)+"K";document.getElementById('o-ra').textContent=ra;
+ res={p:mc(stats(g),10.97e6,sp,ra),c:mc(conc(g),12.2e6,sp,ra)};
+ const P_=Math.round(res.p.succ*100)+"%",C_=Math.round(res.c.succ*100)+"%";
+ document.getElementById('k-succ').textContent=P_;document.getElementById('h-p').textContent=P_;document.getElementById('h-c').textContent=C_;draw()}
+function draw(){const Wd=svg.clientWidth,H=svg.clientHeight;if(!Wd||!res)return;const narrow=Wd<520;
+ const L=narrow?34:42,R=narrow?44:110,T=12,B=30,iw=Wd-L-R,ih=H-T-B;
+ const x=a=>L+(a-54)/(95-54)*iw,ymin=Math.min(50,Math.floor(Math.min(res.c.alive[Y],res.p.alive[Y])*10)*10),y=v=>T+(1-(v*100-ymin)/(100-ymin))*ih;
+ let o="";for(let v=ymin;v<=100;v+=10)o+=`<line x1="${L}" x2="${L+iw}" y1="${y(v/100)}" y2="${y(v/100)}" stroke="var(--grid)"/><text x="${L-6}" y="${y(v/100)+4}" text-anchor="end" font-size="12" fill="var(--mute)">${v}%</text>`;
+ for(let a=55;a<=95;a+=narrow?10:5)o+=`<text x="${x(a)}" y="${T+ih+20}" text-anchor="middle" font-size="12" fill="var(--mute)">${a}</text>`;
+ const ra=+document.getElementById('ra').value;o+=`<line x1="${x(ra)}" x2="${x(ra)}" y1="${T}" y2="${T+ih}" stroke="var(--ink2)" stroke-dasharray="3 3"/><text x="${x(ra)+5}" y="${T+ih-6}" font-size="12" fill="var(--ink2)">${narrow?"":"retire "}${ra}</text>`;
+ const line=(arr,c)=>`<polyline fill="none" stroke="${c}" stroke-width="2" stroke-linejoin="round" points="${arr.map((v,t)=>x(54+t)+","+y(Math.max(v,ymin/100))).join(" ")}"/>`;
+ o+=line(res.c.alive,"var(--s2)")+line(res.p.alive,"var(--s1)");
+ const lp=res.p.alive[Y],lc=res.c.alive[Y];let yp=y(lp),yc=y(Math.max(lc,.5));if(Math.abs(yp-yc)<16)yc=yp+16;
+ o+=`<circle cx="${x(95)}" cy="${y(lp)}" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"/><circle cx="${x(95)}" cy="${y(Math.max(lc,.5))}" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"/>`;
+ o+=`<text x="${x(95)+12}" y="${yp+4}" font-size="13" fill="var(--ink)">${Math.round(lp*100)}%${narrow?"":" proposed"}</text><text x="${x(95)+12}" y="${yc+4}" font-size="13" fill="var(--ink)">${Math.round(lc*100)}%${narrow?"":" concentrated"}</text>`;
+ o+=`<line id="xh" y1="${T}" y2="${T+ih}" stroke="var(--ink2)" visibility="hidden"/><rect x="${L}" y="${T}" width="${iw}" height="${ih}" fill="transparent" id="hit"/>`;
+ svg.innerHTML=o;const hit=svg.querySelector('#hit'),xh=svg.querySelector('#xh');
+ hit.onpointermove=e=>{const r=svg.getBoundingClientRect(),mx=e.clientX-r.left,a=Math.round(54+(mx-L)/iw*41),t=Math.min(Math.max(a-54,0),Y);
+  xh.setAttribute('x1',x(54+t));xh.setAttribute('x2',x(54+t));xh.setAttribute('visibility','visible');
+  tip.style.display='block';tip.innerHTML=`<b>Age ${54+t}</b><br><span style="color:var(--s1)">━</span> Proposed: ${Math.round(res.p.alive[t]*100)}% funded<br><span style="color:var(--s2)">━</span> Concentrated: ${Math.round(res.c.alive[t]*100)}% funded`;
+  const tx=x(54+t)+12;tip.style.left=(tx+170>Wd?x(54+t)-182:tx)+'px';tip.style.top=(T+10)+'px'};
+ hit.onpointerleave=()=>{tip.style.display='none';xh.setAttribute('visibility','hidden')}}
+const ro=new ResizeObserver(draw);ro.observe(svg);
+const bj=document.getElementById('cma-j'),bs=document.getElementById('cma-s');
+const setC=c=>{cma=c;bj.setAttribute('aria-pressed',c==="j");bs.setAttribute('aria-pressed',c==="s");run()};
+bj.onclick=()=>setC("j");bs.onclick=()=>setC("s");
+document.getElementById('sp').oninput=run;document.getElementById('ra').oninput=run;
+run();
+}
+</script>
+</body>
+</html>

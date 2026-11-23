@@ -1,0 +1,1001 @@
+date,category,amount,description
+2023-09-01,Rent,1104.0,Apartment rent
+2023-09-01,Entertainment,55.65,Events / movies
+2023-09-02,Transport,38.16,Rideshare / transit
+2023-09-05,Utilities & phone,95.89,"Electric, internet, phone"
+2023-09-07,Shopping,20.25,Clothes / online order
+2023-09-07,Transport,7.02,Rideshare / transit
+2023-09-08,Shopping,42.61,Clothes / online order
+2023-09-10,Subscriptions,27.97,"Streaming, cloud storage"
+2023-09-13,Shopping,26.47,Clothes / online order
+2023-09-14,Groceries,34.33,Grocery store
+2023-09-16,Entertainment,130.48,Events / movies
+2023-09-20,Transport,26.79,Rideshare / transit
+2023-09-21,Entertainment,46.16,Events / movies
+2023-09-22,Dining out,17.13,Restaurant / cafe
+2023-09-22,Shopping,32.92,Clothes / online order
+2023-09-22,Transport,7.73,Rideshare / transit
+2023-09-24,Shopping,9.25,Clothes / online order
+2023-09-26,Dining out,13.94,Restaurant / cafe
+2023-09-26,Dining out,31.1,Restaurant / cafe
+2023-09-27,Shopping,79.96,Clothes / online order
+2023-09-27,Transport,1.86,Rideshare / transit
+2023-09-28,Groceries,41.36,Grocery store
+2023-09-29,Shopping,18.16,Clothes / online order
+2023-09-29,Dining out,14.32,Restaurant / cafe
+2023-09-30,Shopping,19.84,Clothes / online order
+2023-10-01,Shopping,37.26,Clothes / online order
+2023-10-01,Entertainment,15.82,Events / movies
+2023-10-01,Rent,1104.0,Apartment rent
+2023-10-01,Groceries,25.61,Grocery store
+2023-10-02,Groceries,59.12,Grocery store
+2023-10-02,Shopping,37.34,Clothes / online order
+2023-10-03,Dining out,22.38,Restaurant / cafe
+2023-10-04,Entertainment,16.68,Events / movies
+2023-10-05,Transport,8.79,Rideshare / transit
+2023-10-05,Utilities & phone,92.75,"Electric, internet, phone"
+2023-10-07,Dining out,13.25,Restaurant / cafe
+2023-10-10,Transport,3.52,Rideshare / transit
+2023-10-10,Subscriptions,27.97,"Streaming, cloud storage"
+2023-10-13,Entertainment,27.41,Events / movies
+2023-10-14,Transport,26.84,Rideshare / transit
+2023-10-16,Entertainment,0.38,Events / movies
+2023-10-17,Transport,11.6,Rideshare / transit
+2023-10-19,Dining out,34.52,Restaurant / cafe
+2023-10-19,Dining out,48.37,Restaurant / cafe
+2023-10-21,Groceries,67.53,Grocery store
+2023-10-23,Groceries,44.13,Grocery store
+2023-10-23,Groceries,31.91,Grocery store
+2023-11-01,Rent,1104.0,Apartment rent
+2023-11-02,Dining out,34.24,Restaurant / cafe
+2023-11-04,Shopping,75.96,Clothes / online order
+2023-11-05,Utilities & phone,103.76,"Electric, internet, phone"
+2023-11-05,Entertainment,15.33,Events / movies
+2023-11-06,Shopping,39.08,Clothes / online order
+2023-11-07,Transport,23.77,Rideshare / transit
+2023-11-08,Shopping,27.23,Clothes / online order
+2023-11-09,Transport,8.86,Rideshare / transit
+2023-11-10,Subscriptions,27.97,"Streaming, cloud storage"
+2023-11-10,Transport,21.78,Rideshare / transit
+2023-11-11,Transport,11.08,Rideshare / transit
+2023-11-12,Dining out,5.83,Restaurant / cafe
+2023-11-12,Shopping,2.72,Clothes / online order
+2023-11-14,Dining out,22.37,Restaurant / cafe
+2023-11-14,Shopping,25.82,Clothes / online order
+2023-11-16,Dining out,24.23,Restaurant / cafe
+2023-11-16,Dining out,33.88,Restaurant / cafe
+2023-11-17,Shopping,17.64,Clothes / online order
+2023-11-18,Shopping,24.73,Clothes / online order
+2023-11-19,Entertainment,3.76,Events / movies
+2023-11-19,Entertainment,33.66,Events / movies
+2023-11-20,Transport,19.63,Rideshare / transit
+2023-11-21,Transport,8.3,Rideshare / transit
+2023-11-22,Shopping,14.35,Clothes / online order
+2023-11-24,Groceries,67.8,Grocery store
+2023-11-24,Dining out,16.02,Restaurant / cafe
+2023-11-25,Shopping,50.37,Clothes / online order
+2023-11-25,Dining out,15.58,Restaurant / cafe
+2023-11-26,Dining out,13.41,Restaurant / cafe
+2023-11-27,Shopping,27.46,Clothes / online order
+2023-11-28,Dining out,14.43,Restaurant / cafe
+2023-11-30,Groceries,70.16,Grocery store
+2023-12-01,Rent,1104.0,Apartment rent
+2023-12-02,Shopping,12.32,Clothes / online order
+2023-12-03,Dining out,41.27,Restaurant / cafe
+2023-12-03,Shopping,33.73,Clothes / online order
+2023-12-04,Travel,707.34,Flights / trips home
+2023-12-04,Transport,6.45,Rideshare / transit
+2023-12-04,Transport,35.13,Rideshare / transit
+2023-12-05,Groceries,45.24,Grocery store
+2023-12-05,Utilities & phone,102.52,"Electric, internet, phone"
+2023-12-06,Shopping,53.97,Clothes / online order
+2023-12-06,Shopping,1.32,Clothes / online order
+2023-12-08,Shopping,8.77,Clothes / online order
+2023-12-10,Subscriptions,27.97,"Streaming, cloud storage"
+2023-12-11,Groceries,39.35,Grocery store
+2023-12-11,Shopping,14.54,Clothes / online order
+2023-12-12,Groceries,49.33,Grocery store
+2023-12-12,Dining out,13.04,Restaurant / cafe
+2023-12-13,Transport,1.53,Rideshare / transit
+2023-12-14,Transport,6.25,Rideshare / transit
+2023-12-16,Shopping,126.66,Clothes / online order
+2023-12-16,Dining out,16.13,Restaurant / cafe
+2023-12-16,Dining out,46.37,Restaurant / cafe
+2023-12-17,Transport,24.73,Rideshare / transit
+2023-12-17,Dining out,2.98,Restaurant / cafe
+2023-12-19,Dining out,28.03,Restaurant / cafe
+2023-12-19,Dining out,23.06,Restaurant / cafe
+2023-12-24,Shopping,119.4,Clothes / online order
+2023-12-24,Dining out,17.32,Restaurant / cafe
+2023-12-24,Dining out,29.0,Restaurant / cafe
+2023-12-26,Dining out,31.17,Restaurant / cafe
+2023-12-27,Dining out,14.28,Restaurant / cafe
+2023-12-29,Transport,3.38,Rideshare / transit
+2023-12-29,Dining out,7.88,Restaurant / cafe
+2023-12-29,Transport,4.05,Rideshare / transit
+2024-01-01,Entertainment,34.01,Events / movies
+2024-01-01,Rent,1104.0,Apartment rent
+2024-01-03,Groceries,75.89,Grocery store
+2024-01-04,Shopping,58.14,Clothes / online order
+2024-01-05,Utilities & phone,121.42,"Electric, internet, phone"
+2024-01-10,Dining out,28.48,Restaurant / cafe
+2024-01-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-01-11,Transport,9.85,Rideshare / transit
+2024-01-11,Transport,9.45,Rideshare / transit
+2024-01-12,Dining out,10.83,Restaurant / cafe
+2024-01-12,Groceries,70.54,Grocery store
+2024-01-13,Books & school,257.54,"Textbooks, supplies"
+2024-01-16,Groceries,76.5,Grocery store
+2024-01-17,Dining out,17.96,Restaurant / cafe
+2024-01-18,Shopping,61.79,Clothes / online order
+2024-01-20,Entertainment,27.17,Events / movies
+2024-01-21,Transport,4.57,Rideshare / transit
+2024-01-21,Transport,15.41,Rideshare / transit
+2024-01-24,Dining out,3.24,Restaurant / cafe
+2024-01-31,Transport,8.85,Rideshare / transit
+2024-02-01,Rent,1104.0,Apartment rent
+2024-02-04,Dining out,2.48,Restaurant / cafe
+2024-02-05,Utilities & phone,131.92,"Electric, internet, phone"
+2024-02-06,Dining out,11.89,Restaurant / cafe
+2024-02-06,Entertainment,35.03,Events / movies
+2024-02-07,Dining out,8.25,Restaurant / cafe
+2024-02-08,Dining out,36.35,Restaurant / cafe
+2024-02-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-02-11,Dining out,9.47,Restaurant / cafe
+2024-02-11,Transport,7.19,Rideshare / transit
+2024-02-16,Entertainment,16.52,Events / movies
+2024-02-16,Shopping,35.03,Clothes / online order
+2024-02-17,Transport,19.61,Rideshare / transit
+2024-02-19,Dining out,38.78,Restaurant / cafe
+2024-02-19,Groceries,28.48,Grocery store
+2024-02-23,Dining out,23.88,Restaurant / cafe
+2024-02-27,Dining out,34.87,Restaurant / cafe
+2024-02-27,Dining out,18.4,Restaurant / cafe
+2024-03-01,Rent,1104.0,Apartment rent
+2024-03-01,Entertainment,2.65,Events / movies
+2024-03-02,Transport,15.85,Rideshare / transit
+2024-03-02,Dining out,19.6,Restaurant / cafe
+2024-03-03,Groceries,62.68,Grocery store
+2024-03-05,Utilities & phone,97.78,"Electric, internet, phone"
+2024-03-05,Groceries,77.78,Grocery store
+2024-03-06,Entertainment,29.45,Events / movies
+2024-03-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-03-12,Dining out,27.51,Restaurant / cafe
+2024-03-13,Shopping,17.79,Clothes / online order
+2024-03-14,Transport,17.14,Rideshare / transit
+2024-03-14,Transport,6.68,Rideshare / transit
+2024-03-14,Shopping,90.59,Clothes / online order
+2024-03-15,Dining out,12.38,Restaurant / cafe
+2024-03-15,Entertainment,73.73,Events / movies
+2024-03-15,Entertainment,35.4,Events / movies
+2024-03-17,Groceries,109.55,Grocery store
+2024-03-20,Groceries,76.03,Grocery store
+2024-03-20,Dining out,21.11,Restaurant / cafe
+2024-03-21,Transport,4.28,Rideshare / transit
+2024-03-22,Transport,8.45,Rideshare / transit
+2024-03-23,Groceries,41.19,Grocery store
+2024-03-24,Dining out,14.83,Restaurant / cafe
+2024-03-25,Dining out,12.05,Restaurant / cafe
+2024-03-26,Shopping,86.13,Clothes / online order
+2024-03-26,Dining out,17.87,Restaurant / cafe
+2024-03-27,Shopping,57.56,Clothes / online order
+2024-03-30,Groceries,25.56,Grocery store
+2024-03-31,Dining out,15.67,Restaurant / cafe
+2024-04-01,Rent,1104.0,Apartment rent
+2024-04-01,Dining out,18.0,Restaurant / cafe
+2024-04-01,Transport,6.46,Rideshare / transit
+2024-04-02,Shopping,29.39,Clothes / online order
+2024-04-04,Shopping,34.01,Clothes / online order
+2024-04-04,Dining out,13.49,Restaurant / cafe
+2024-04-05,Utilities & phone,83.86,"Electric, internet, phone"
+2024-04-07,Dining out,22.94,Restaurant / cafe
+2024-04-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-04-10,Dining out,26.21,Restaurant / cafe
+2024-04-12,Dining out,8.51,Restaurant / cafe
+2024-04-12,Transport,12.41,Rideshare / transit
+2024-04-19,Shopping,75.4,Clothes / online order
+2024-04-19,Entertainment,35.44,Events / movies
+2024-04-24,Shopping,14.22,Clothes / online order
+2024-04-24,Transport,6.27,Rideshare / transit
+2024-04-27,Groceries,128.06,Grocery store
+2024-04-29,Entertainment,47.67,Events / movies
+2024-05-01,Shopping,62.56,Clothes / online order
+2024-05-01,Rent,1104.0,Apartment rent
+2024-05-01,Dining out,14.47,Restaurant / cafe
+2024-05-03,Groceries,47.7,Grocery store
+2024-05-03,Groceries,61.53,Grocery store
+2024-05-05,Utilities & phone,84.71,"Electric, internet, phone"
+2024-05-05,Groceries,54.38,Grocery store
+2024-05-08,Dining out,52.65,Restaurant / cafe
+2024-05-09,Travel,379.17,Flights / trips home
+2024-05-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-05-11,Shopping,63.04,Clothes / online order
+2024-05-14,Transport,5.13,Rideshare / transit
+2024-05-14,Entertainment,34.28,Events / movies
+2024-05-14,Groceries,57.57,Grocery store
+2024-05-14,Dining out,16.83,Restaurant / cafe
+2024-05-14,Dining out,18.66,Restaurant / cafe
+2024-05-14,Groceries,122.08,Grocery store
+2024-05-15,Dining out,7.67,Restaurant / cafe
+2024-05-18,Transport,7.03,Rideshare / transit
+2024-05-20,Transport,17.61,Rideshare / transit
+2024-05-20,Shopping,36.67,Clothes / online order
+2024-05-23,Dining out,10.07,Restaurant / cafe
+2024-05-23,Shopping,37.29,Clothes / online order
+2024-05-24,Transport,3.98,Rideshare / transit
+2024-05-24,Groceries,56.73,Grocery store
+2024-05-25,Groceries,62.19,Grocery store
+2024-05-26,Dining out,21.76,Restaurant / cafe
+2024-05-27,Shopping,18.06,Clothes / online order
+2024-05-30,Entertainment,33.95,Events / movies
+2024-05-30,Entertainment,19.42,Events / movies
+2024-06-01,Dining out,10.39,Restaurant / cafe
+2024-06-01,Rent,672.0,Apartment rent
+2024-06-02,Groceries,41.02,Grocery store
+2024-06-04,Dining out,7.25,Restaurant / cafe
+2024-06-05,Utilities & phone,105.1,"Electric, internet, phone"
+2024-06-05,Entertainment,9.4,Events / movies
+2024-06-08,Entertainment,20.48,Events / movies
+2024-06-08,Dining out,12.75,Restaurant / cafe
+2024-06-08,Dining out,15.85,Restaurant / cafe
+2024-06-08,Transport,6.34,Rideshare / transit
+2024-06-09,Groceries,56.12,Grocery store
+2024-06-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-06-10,Groceries,46.41,Grocery store
+2024-06-10,Entertainment,7.0,Events / movies
+2024-06-11,Entertainment,25.98,Events / movies
+2024-06-11,Transport,15.63,Rideshare / transit
+2024-06-12,Entertainment,52.21,Events / movies
+2024-06-12,Transport,3.61,Rideshare / transit
+2024-06-12,Dining out,38.07,Restaurant / cafe
+2024-06-15,Groceries,40.76,Grocery store
+2024-06-15,Groceries,34.71,Grocery store
+2024-06-17,Shopping,23.98,Clothes / online order
+2024-06-17,Dining out,13.04,Restaurant / cafe
+2024-06-17,Dining out,25.03,Restaurant / cafe
+2024-06-18,Transport,11.49,Rideshare / transit
+2024-06-26,Dining out,18.63,Restaurant / cafe
+2024-06-28,Shopping,15.41,Clothes / online order
+2024-07-01,Rent,672.0,Apartment rent
+2024-07-01,Transport,0.77,Rideshare / transit
+2024-07-03,Entertainment,40.84,Events / movies
+2024-07-03,Shopping,28.86,Clothes / online order
+2024-07-04,Groceries,33.95,Grocery store
+2024-07-04,Shopping,35.21,Clothes / online order
+2024-07-05,Transport,4.85,Rideshare / transit
+2024-07-05,Shopping,37.08,Clothes / online order
+2024-07-05,Utilities & phone,122.54,"Electric, internet, phone"
+2024-07-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-07-13,Entertainment,35.52,Events / movies
+2024-07-15,Shopping,111.0,Clothes / online order
+2024-07-16,Dining out,20.83,Restaurant / cafe
+2024-07-16,Groceries,94.37,Grocery store
+2024-07-18,Dining out,13.61,Restaurant / cafe
+2024-07-19,Dining out,17.52,Restaurant / cafe
+2024-07-21,Dining out,58.17,Restaurant / cafe
+2024-07-21,Entertainment,10.42,Events / movies
+2024-07-22,Transport,10.31,Rideshare / transit
+2024-07-24,Transport,5.29,Rideshare / transit
+2024-07-24,Transport,3.69,Rideshare / transit
+2024-07-27,Transport,13.8,Rideshare / transit
+2024-08-01,Rent,1150.0,Apartment rent
+2024-08-02,Shopping,8.35,Clothes / online order
+2024-08-03,Transport,4.9,Rideshare / transit
+2024-08-04,Transport,6.28,Rideshare / transit
+2024-08-05,Utilities & phone,116.51,"Electric, internet, phone"
+2024-08-06,Transport,4.46,Rideshare / transit
+2024-08-08,Groceries,44.41,Grocery store
+2024-08-08,Entertainment,19.17,Events / movies
+2024-08-09,Transport,12.91,Rideshare / transit
+2024-08-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-08-12,Travel,399.76,Flights / trips home
+2024-08-13,Books & school,322.05,"Textbooks, supplies"
+2024-08-15,Entertainment,49.33,Events / movies
+2024-08-17,Transport,22.14,Rideshare / transit
+2024-08-17,Shopping,57.98,Clothes / online order
+2024-08-17,Entertainment,29.97,Events / movies
+2024-08-17,Dining out,9.81,Restaurant / cafe
+2024-08-24,Shopping,60.97,Clothes / online order
+2024-08-24,Dining out,8.67,Restaurant / cafe
+2024-08-25,Entertainment,9.21,Events / movies
+2024-08-25,Shopping,34.9,Clothes / online order
+2024-08-27,Dining out,25.73,Restaurant / cafe
+2024-08-27,Groceries,15.53,Grocery store
+2024-08-28,Dining out,14.99,Restaurant / cafe
+2024-08-28,Shopping,15.39,Clothes / online order
+2024-08-29,Dining out,25.27,Restaurant / cafe
+2024-08-31,Dining out,29.76,Restaurant / cafe
+2024-08-31,Dining out,6.05,Restaurant / cafe
+2024-09-01,Dining out,21.42,Restaurant / cafe
+2024-09-01,Rent,1150.0,Apartment rent
+2024-09-02,Groceries,106.43,Grocery store
+2024-09-03,Groceries,72.7,Grocery store
+2024-09-03,Transport,22.33,Rideshare / transit
+2024-09-05,Entertainment,8.99,Events / movies
+2024-09-05,Utilities & phone,116.1,"Electric, internet, phone"
+2024-09-05,Transport,9.78,Rideshare / transit
+2024-09-06,Dining out,41.67,Restaurant / cafe
+2024-09-09,Groceries,61.49,Grocery store
+2024-09-09,Groceries,60.37,Grocery store
+2024-09-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-09-11,Entertainment,4.65,Events / movies
+2024-09-11,Dining out,17.1,Restaurant / cafe
+2024-09-12,Entertainment,30.39,Events / movies
+2024-09-12,Shopping,83.07,Clothes / online order
+2024-09-13,Dining out,26.12,Restaurant / cafe
+2024-09-14,Shopping,46.56,Clothes / online order
+2024-09-14,Dining out,31.1,Restaurant / cafe
+2024-09-16,Dining out,21.71,Restaurant / cafe
+2024-09-17,Transport,3.51,Rideshare / transit
+2024-09-19,Shopping,82.29,Clothes / online order
+2024-09-20,Groceries,79.54,Grocery store
+2024-09-20,Groceries,47.65,Grocery store
+2024-09-21,Dining out,29.7,Restaurant / cafe
+2024-09-21,Shopping,45.16,Clothes / online order
+2024-09-24,Transport,18.33,Rideshare / transit
+2024-09-25,Entertainment,22.15,Events / movies
+2024-09-26,Dining out,32.43,Restaurant / cafe
+2024-09-26,Shopping,40.48,Clothes / online order
+2024-09-27,Transport,23.75,Rideshare / transit
+2024-09-29,Groceries,35.05,Grocery store
+2024-10-01,Rent,1150.0,Apartment rent
+2024-10-01,Transport,7.43,Rideshare / transit
+2024-10-01,Dining out,19.78,Restaurant / cafe
+2024-10-03,Dining out,7.68,Restaurant / cafe
+2024-10-04,Dining out,8.81,Restaurant / cafe
+2024-10-05,Utilities & phone,81.19,"Electric, internet, phone"
+2024-10-06,Dining out,26.67,Restaurant / cafe
+2024-10-06,Dining out,12.15,Restaurant / cafe
+2024-10-06,Dining out,10.92,Restaurant / cafe
+2024-10-06,Dining out,8.99,Restaurant / cafe
+2024-10-07,Dining out,11.06,Restaurant / cafe
+2024-10-09,Transport,39.85,Rideshare / transit
+2024-10-10,Dining out,25.34,Restaurant / cafe
+2024-10-10,Groceries,28.92,Grocery store
+2024-10-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-10-11,Shopping,81.78,Clothes / online order
+2024-10-13,Shopping,15.78,Clothes / online order
+2024-10-16,Dining out,16.04,Restaurant / cafe
+2024-10-16,Groceries,62.24,Grocery store
+2024-10-17,Groceries,54.43,Grocery store
+2024-10-19,Dining out,13.59,Restaurant / cafe
+2024-10-20,Dining out,14.08,Restaurant / cafe
+2024-10-21,Transport,11.03,Rideshare / transit
+2024-10-22,Dining out,37.76,Restaurant / cafe
+2024-10-22,Dining out,20.19,Restaurant / cafe
+2024-10-23,Dining out,39.05,Restaurant / cafe
+2024-10-28,Dining out,15.81,Restaurant / cafe
+2024-11-01,Shopping,37.17,Clothes / online order
+2024-11-01,Rent,1150.0,Apartment rent
+2024-11-01,Shopping,26.07,Clothes / online order
+2024-11-04,Entertainment,15.15,Events / movies
+2024-11-05,Groceries,48.93,Grocery store
+2024-11-05,Utilities & phone,111.71,"Electric, internet, phone"
+2024-11-05,Shopping,25.49,Clothes / online order
+2024-11-09,Groceries,39.82,Grocery store
+2024-11-09,Dining out,9.79,Restaurant / cafe
+2024-11-09,Shopping,43.93,Clothes / online order
+2024-11-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-11-10,Transport,18.4,Rideshare / transit
+2024-11-11,Shopping,71.1,Clothes / online order
+2024-11-12,Transport,11.12,Rideshare / transit
+2024-11-13,Dining out,16.4,Restaurant / cafe
+2024-11-14,Dining out,13.42,Restaurant / cafe
+2024-11-15,Transport,6.05,Rideshare / transit
+2024-11-15,Shopping,24.06,Clothes / online order
+2024-11-15,Shopping,75.3,Clothes / online order
+2024-11-16,Transport,4.89,Rideshare / transit
+2024-11-16,Dining out,40.23,Restaurant / cafe
+2024-11-19,Dining out,15.01,Restaurant / cafe
+2024-11-21,Transport,12.74,Rideshare / transit
+2024-11-22,Transport,18.83,Rideshare / transit
+2024-11-22,Entertainment,40.53,Events / movies
+2024-11-25,Groceries,102.71,Grocery store
+2024-11-26,Transport,18.13,Rideshare / transit
+2024-11-26,Groceries,35.54,Grocery store
+2024-11-27,Dining out,34.38,Restaurant / cafe
+2024-11-29,Dining out,16.45,Restaurant / cafe
+2024-11-29,Shopping,30.79,Clothes / online order
+2024-11-30,Shopping,24.01,Clothes / online order
+2024-12-01,Rent,1150.0,Apartment rent
+2024-12-04,Dining out,21.39,Restaurant / cafe
+2024-12-05,Utilities & phone,83.04,"Electric, internet, phone"
+2024-12-05,Transport,22.3,Rideshare / transit
+2024-12-06,Transport,4.06,Rideshare / transit
+2024-12-08,Groceries,37.98,Grocery store
+2024-12-09,Dining out,25.17,Restaurant / cafe
+2024-12-10,Dining out,16.01,Restaurant / cafe
+2024-12-10,Subscriptions,27.97,"Streaming, cloud storage"
+2024-12-12,Travel,838.53,Flights / trips home
+2024-12-13,Transport,17.65,Rideshare / transit
+2024-12-13,Shopping,33.54,Clothes / online order
+2024-12-15,Entertainment,35.33,Events / movies
+2024-12-15,Transport,0.84,Rideshare / transit
+2024-12-16,Shopping,96.9,Clothes / online order
+2024-12-17,Dining out,49.22,Restaurant / cafe
+2024-12-17,Dining out,22.03,Restaurant / cafe
+2024-12-18,Dining out,6.21,Restaurant / cafe
+2024-12-19,Entertainment,99.27,Events / movies
+2024-12-20,Shopping,38.94,Clothes / online order
+2024-12-20,Dining out,16.57,Restaurant / cafe
+2024-12-21,Dining out,28.55,Restaurant / cafe
+2024-12-22,Groceries,53.07,Grocery store
+2024-12-22,Dining out,26.59,Restaurant / cafe
+2024-12-22,Transport,16.73,Rideshare / transit
+2024-12-23,Dining out,24.38,Restaurant / cafe
+2024-12-23,Shopping,19.83,Clothes / online order
+2024-12-24,Shopping,27.24,Clothes / online order
+2024-12-24,Dining out,10.03,Restaurant / cafe
+2024-12-25,Shopping,8.49,Clothes / online order
+2024-12-26,Transport,11.87,Rideshare / transit
+2024-12-28,Dining out,51.17,Restaurant / cafe
+2024-12-29,Groceries,97.47,Grocery store
+2024-12-30,Transport,6.96,Rideshare / transit
+2025-01-01,Rent,1150.0,Apartment rent
+2025-01-01,Groceries,86.1,Grocery store
+2025-01-01,Groceries,72.65,Grocery store
+2025-01-02,Dining out,16.17,Restaurant / cafe
+2025-01-04,Transport,7.4,Rideshare / transit
+2025-01-05,Utilities & phone,114.12,"Electric, internet, phone"
+2025-01-07,Transport,7.82,Rideshare / transit
+2025-01-07,Transport,9.36,Rideshare / transit
+2025-01-09,Dining out,13.7,Restaurant / cafe
+2025-01-09,Transport,7.59,Rideshare / transit
+2025-01-10,Entertainment,26.63,Events / movies
+2025-01-10,Dining out,10.27,Restaurant / cafe
+2025-01-10,Dining out,22.89,Restaurant / cafe
+2025-01-10,Subscriptions,27.97,"Streaming, cloud storage"
+2025-01-11,Dining out,37.09,Restaurant / cafe
+2025-01-12,Dining out,25.62,Restaurant / cafe
+2025-01-13,Books & school,221.69,"Textbooks, supplies"
+2025-01-13,Transport,38.42,Rideshare / transit
+2025-01-13,Shopping,92.8,Clothes / online order
+2025-01-16,Entertainment,42.48,Events / movies
+2025-01-17,Dining out,25.84,Restaurant / cafe
+2025-01-17,Entertainment,27.7,Events / movies
+2025-01-17,Shopping,38.3,Clothes / online order
+2025-01-18,Groceries,63.94,Grocery store
+2025-01-18,Shopping,93.87,Clothes / online order
+2025-01-21,Entertainment,9.75,Events / movies
+2025-01-21,Dining out,16.52,Restaurant / cafe
+2025-01-21,Transport,3.39,Rideshare / transit
+2025-01-23,Transport,7.47,Rideshare / transit
+2025-01-24,Shopping,106.53,Clothes / online order
+2025-01-25,Transport,18.0,Rideshare / transit
+2025-01-27,Groceries,80.82,Grocery store
+2025-01-28,Groceries,58.12,Grocery store
+2025-01-30,Dining out,30.19,Restaurant / cafe
+2025-01-30,Dining out,19.02,Restaurant / cafe
+2025-01-31,Dining out,11.27,Restaurant / cafe
+2025-02-01,Dining out,8.05,Restaurant / cafe
+2025-02-01,Transport,2.59,Rideshare / transit
+2025-02-01,Rent,1150.0,Apartment rent
+2025-02-02,Shopping,30.48,Clothes / online order
+2025-02-03,Shopping,38.35,Clothes / online order
+2025-02-04,Groceries,67.05,Grocery store
+2025-02-05,Dining out,33.74,Restaurant / cafe
+2025-02-05,Utilities & phone,117.5,"Electric, internet, phone"
+2025-02-06,Dining out,16.7,Restaurant / cafe
+2025-02-07,Groceries,49.78,Grocery store
+2025-02-08,Transport,1.46,Rideshare / transit
+2025-02-09,Transport,4.24,Rideshare / transit
+2025-02-09,Groceries,29.84,Grocery store
+2025-02-09,Dining out,22.12,Restaurant / cafe
+2025-02-10,Subscriptions,27.97,"Streaming, cloud storage"
+2025-02-10,Groceries,69.37,Grocery store
+2025-02-10,Entertainment,20.31,Events / movies
+2025-02-12,Dining out,18.77,Restaurant / cafe
+2025-02-14,Dining out,43.42,Restaurant / cafe
+2025-02-15,Transport,26.59,Rideshare / transit
+2025-02-17,Entertainment,13.37,Events / movies
+2025-02-17,Dining out,25.72,Restaurant / cafe
+2025-02-18,Shopping,116.84,Clothes / online order
+2025-02-19,Dining out,17.53,Restaurant / cafe
+2025-02-22,Dining out,20.52,Restaurant / cafe
+2025-02-25,Dining out,11.0,Restaurant / cafe
+2025-02-25,Transport,21.0,Rideshare / transit
+2025-03-01,Rent,1150.0,Apartment rent
+2025-03-03,Groceries,77.27,Grocery store
+2025-03-04,Dining out,19.23,Restaurant / cafe
+2025-03-05,Utilities & phone,88.11,"Electric, internet, phone"
+2025-03-09,Transport,27.23,Rideshare / transit
+2025-03-10,Subscriptions,27.97,"Streaming, cloud storage"
+2025-03-10,Groceries,98.95,Grocery store
+2025-03-14,Transport,7.15,Rideshare / transit
+2025-03-14,Groceries,41.14,Grocery store
+2025-03-14,Dining out,10.45,Restaurant / cafe
+2025-03-17,Dining out,24.22,Restaurant / cafe
+2025-03-17,Shopping,40.58,Clothes / online order
+2025-03-18,Groceries,101.81,Grocery store
+2025-03-20,Groceries,68.28,Grocery store
+2025-03-20,Dining out,7.8,Restaurant / cafe
+2025-03-24,Entertainment,18.79,Events / movies
+2025-03-24,Groceries,30.05,Grocery store
+2025-03-25,Dining out,5.67,Restaurant / cafe
+2025-03-26,Groceries,53.96,Grocery store
+2025-03-27,Shopping,55.91,Clothes / online order
+2025-03-28,Groceries,118.9,Grocery store
+2025-03-29,Entertainment,13.99,Events / movies
+2025-03-30,Dining out,30.47,Restaurant / cafe
+2025-04-01,Rent,1150.0,Apartment rent
+2025-04-02,Dining out,23.32,Restaurant / cafe
+2025-04-02,Shopping,20.47,Clothes / online order
+2025-04-03,Transport,7.53,Rideshare / transit
+2025-04-03,Dining out,13.19,Restaurant / cafe
+2025-04-04,Dining out,17.35,Restaurant / cafe
+2025-04-05,Utilities & phone,97.34,"Electric, internet, phone"
+2025-04-08,Dining out,19.55,Restaurant / cafe
+2025-04-09,Groceries,22.95,Grocery store
+2025-04-09,Dining out,29.54,Restaurant / cafe
+2025-04-09,Dining out,23.51,Restaurant / cafe
+2025-04-10,Subscriptions,27.97,"Streaming, cloud storage"
+2025-04-11,Dining out,28.78,Restaurant / cafe
+2025-04-12,Dining out,3.48,Restaurant / cafe
+2025-04-13,Dining out,25.58,Restaurant / cafe
+2025-04-14,Groceries,60.49,Grocery store
+2025-04-14,Dining out,22.79,Restaurant / cafe
+2025-04-17,Shopping,52.73,Clothes / online order
+2025-04-18,Groceries,39.07,Grocery store
+2025-04-18,Shopping,13.16,Clothes / online order
+2025-04-20,Dining out,36.4,Restaurant / cafe
+2025-04-22,Groceries,46.05,Grocery store
+2025-04-23,Shopping,14.87,Clothes / online order
+2025-04-24,Shopping,10.08,Clothes / online order
+2025-04-24,Dining out,9.77,Restaurant / cafe
+2025-04-25,Groceries,72.23,Grocery store
+2025-04-27,Dining out,11.0,Restaurant / cafe
+2025-04-30,Dining out,28.51,Restaurant / cafe
+2025-04-30,Dining out,10.48,Restaurant / cafe
+2025-05-01,Rent,1150.0,Apartment rent
+2025-05-01,Dining out,5.39,Restaurant / cafe
+2025-05-02,Transport,24.18,Rideshare / transit
+2025-05-04,Groceries,34.89,Grocery store
+2025-05-05,Utilities & phone,98.42,"Electric, internet, phone"
+2025-05-10,Groceries,32.83,Grocery store
+2025-05-10,Subscriptions,27.97,"Streaming, cloud storage"
+2025-05-11,Transport,12.91,Rideshare / transit
+2025-05-13,Dining out,9.4,Restaurant / cafe
+2025-05-14,Shopping,65.08,Clothes / online order
+2025-05-15,Groceries,26.83,Grocery store
+2025-05-15,Dining out,18.23,Restaurant / cafe
+2025-05-16,Dining out,53.45,Restaurant / cafe
+2025-05-18,Travel,378.09,Flights / trips home
+2025-05-24,Shopping,22.78,Clothes / online order
+2025-05-24,Transport,18.87,Rideshare / transit
+2025-05-24,Dining out,33.28,Restaurant / cafe
+2025-05-26,Dining out,7.06,Restaurant / cafe
+2025-05-29,Shopping,38.28,Clothes / online order
+2025-06-01,Transport,32.45,Rideshare / transit
+2025-06-01,Rent,700.0,Apartment rent
+2025-06-01,Transport,9.34,Rideshare / transit
+2025-06-01,Dining out,21.74,Restaurant / cafe
+2025-06-03,Transport,5.86,Rideshare / transit
+2025-06-05,Shopping,51.98,Clothes / online order
+2025-06-05,Transport,5.9,Rideshare / transit
+2025-06-05,Transport,15.97,Rideshare / transit
+2025-06-05,Utilities & phone,78.79,"Electric, internet, phone"
+2025-06-05,Dining out,17.11,Restaurant / cafe
+2025-06-06,Transport,3.59,Rideshare / transit
+2025-06-07,Shopping,27.08,Clothes / online order
+2025-06-09,Entertainment,18.55,Events / movies
+2025-06-10,Subscriptions,33.97,"Streaming, cloud storage"
+2025-06-11,Shopping,36.93,Clothes / online order
+2025-06-12,Shopping,50.75,Clothes / online order
+2025-06-13,Groceries,36.92,Grocery store
+2025-06-18,Groceries,51.85,Grocery store
+2025-06-21,Dining out,16.74,Restaurant / cafe
+2025-06-22,Shopping,16.77,Clothes / online order
+2025-06-23,Entertainment,19.25,Events / movies
+2025-06-25,Shopping,56.48,Clothes / online order
+2025-06-26,Dining out,10.4,Restaurant / cafe
+2025-06-29,Transport,6.34,Rideshare / transit
+2025-07-01,Dining out,19.42,Restaurant / cafe
+2025-07-01,Rent,700.0,Apartment rent
+2025-07-01,Groceries,118.38,Grocery store
+2025-07-03,Transport,14.23,Rideshare / transit
+2025-07-04,Transport,12.99,Rideshare / transit
+2025-07-05,Groceries,26.96,Grocery store
+2025-07-05,Utilities & phone,116.98,"Electric, internet, phone"
+2025-07-07,Dining out,14.44,Restaurant / cafe
+2025-07-08,Entertainment,28.46,Events / movies
+2025-07-09,Groceries,57.88,Grocery store
+2025-07-10,Subscriptions,33.97,"Streaming, cloud storage"
+2025-07-11,Entertainment,17.98,Events / movies
+2025-07-12,Shopping,57.97,Clothes / online order
+2025-07-15,Dining out,23.02,Restaurant / cafe
+2025-07-19,Dining out,14.08,Restaurant / cafe
+2025-07-19,Shopping,29.97,Clothes / online order
+2025-07-20,Transport,9.0,Rideshare / transit
+2025-07-22,Transport,2.82,Rideshare / transit
+2025-07-23,Transport,35.11,Rideshare / transit
+2025-07-24,Transport,18.99,Rideshare / transit
+2025-07-24,Shopping,23.88,Clothes / online order
+2025-07-28,Dining out,21.25,Restaurant / cafe
+2025-07-28,Dining out,28.87,Restaurant / cafe
+2025-07-30,Groceries,36.07,Grocery store
+2025-07-31,Transport,6.42,Rideshare / transit
+2025-07-31,Dining out,12.4,Restaurant / cafe
+2025-07-31,Dining out,22.5,Restaurant / cafe
+2025-08-01,Rent,1196.0,Apartment rent
+2025-08-02,Entertainment,17.23,Events / movies
+2025-08-03,Shopping,21.65,Clothes / online order
+2025-08-05,Utilities & phone,131.72,"Electric, internet, phone"
+2025-08-05,Entertainment,75.63,Events / movies
+2025-08-06,Transport,5.55,Rideshare / transit
+2025-08-09,Entertainment,10.55,Events / movies
+2025-08-10,Subscriptions,33.97,"Streaming, cloud storage"
+2025-08-10,Transport,9.98,Rideshare / transit
+2025-08-12,Dining out,11.74,Restaurant / cafe
+2025-08-13,Transport,18.62,Rideshare / transit
+2025-08-13,Books & school,228.98,"Textbooks, supplies"
+2025-08-15,Travel,316.44,Flights / trips home
+2025-08-19,Shopping,43.96,Clothes / online order
+2025-08-23,Transport,22.95,Rideshare / transit
+2025-08-24,Transport,9.84,Rideshare / transit
+2025-08-25,Dining out,53.14,Restaurant / cafe
+2025-08-25,Transport,8.21,Rideshare / transit
+2025-09-01,Rent,1196.0,Apartment rent
+2025-09-01,Dining out,9.36,Restaurant / cafe
+2025-09-02,Dining out,76.11,Restaurant / cafe
+2025-09-03,Dining out,29.34,Restaurant / cafe
+2025-09-05,Utilities & phone,90.01,"Electric, internet, phone"
+2025-09-06,Transport,5.12,Rideshare / transit
+2025-09-09,Entertainment,30.36,Events / movies
+2025-09-10,Subscriptions,33.97,"Streaming, cloud storage"
+2025-09-15,Groceries,71.3,Grocery store
+2025-09-16,Dining out,17.27,Restaurant / cafe
+2025-09-17,Dining out,28.75,Restaurant / cafe
+2025-09-20,Entertainment,40.67,Events / movies
+2025-09-21,Shopping,25.45,Clothes / online order
+2025-09-22,Dining out,9.68,Restaurant / cafe
+2025-09-27,Groceries,64.06,Grocery store
+2025-09-27,Shopping,77.82,Clothes / online order
+2025-09-28,Groceries,92.24,Grocery store
+2025-09-30,Transport,11.75,Rideshare / transit
+2025-09-30,Entertainment,17.99,Events / movies
+2025-10-01,Groceries,38.51,Grocery store
+2025-10-01,Shopping,25.15,Clothes / online order
+2025-10-01,Rent,1196.0,Apartment rent
+2025-10-03,Transport,5.6,Rideshare / transit
+2025-10-03,Shopping,45.94,Clothes / online order
+2025-10-03,Entertainment,4.9,Events / movies
+2025-10-04,Groceries,51.84,Grocery store
+2025-10-05,Utilities & phone,87.48,"Electric, internet, phone"
+2025-10-05,Groceries,51.72,Grocery store
+2025-10-07,Dining out,12.8,Restaurant / cafe
+2025-10-09,Shopping,7.91,Clothes / online order
+2025-10-09,Transport,27.77,Rideshare / transit
+2025-10-09,Shopping,19.93,Clothes / online order
+2025-10-10,Subscriptions,33.97,"Streaming, cloud storage"
+2025-10-10,Transport,4.31,Rideshare / transit
+2025-10-11,Dining out,16.07,Restaurant / cafe
+2025-10-14,Groceries,38.29,Grocery store
+2025-10-15,Dining out,10.39,Restaurant / cafe
+2025-10-18,Shopping,5.44,Clothes / online order
+2025-10-19,Transport,2.4,Rideshare / transit
+2025-10-20,Dining out,23.19,Restaurant / cafe
+2025-10-21,Dining out,34.11,Restaurant / cafe
+2025-10-26,Transport,7.69,Rideshare / transit
+2025-10-26,Dining out,15.97,Restaurant / cafe
+2025-10-27,Dining out,15.6,Restaurant / cafe
+2025-10-27,Dining out,5.63,Restaurant / cafe
+2025-10-29,Dining out,13.31,Restaurant / cafe
+2025-10-29,Shopping,79.57,Clothes / online order
+2025-11-01,Rent,1196.0,Apartment rent
+2025-11-01,Entertainment,26.54,Events / movies
+2025-11-01,Shopping,89.81,Clothes / online order
+2025-11-01,Groceries,48.71,Grocery store
+2025-11-02,Entertainment,49.37,Events / movies
+2025-11-03,Groceries,70.61,Grocery store
+2025-11-04,Dining out,18.33,Restaurant / cafe
+2025-11-04,Shopping,88.1,Clothes / online order
+2025-11-05,Transport,5.43,Rideshare / transit
+2025-11-05,Utilities & phone,94.64,"Electric, internet, phone"
+2025-11-06,Entertainment,24.54,Events / movies
+2025-11-06,Groceries,60.04,Grocery store
+2025-11-08,Shopping,58.33,Clothes / online order
+2025-11-08,Transport,23.93,Rideshare / transit
+2025-11-10,Dining out,27.87,Restaurant / cafe
+2025-11-10,Transport,8.45,Rideshare / transit
+2025-11-10,Subscriptions,33.97,"Streaming, cloud storage"
+2025-11-11,Transport,5.24,Rideshare / transit
+2025-11-14,Dining out,58.53,Restaurant / cafe
+2025-11-14,Shopping,45.97,Clothes / online order
+2025-11-14,Groceries,53.83,Grocery store
+2025-11-15,Dining out,22.8,Restaurant / cafe
+2025-11-15,Transport,14.5,Rideshare / transit
+2025-11-16,Shopping,15.89,Clothes / online order
+2025-11-16,Dining out,26.83,Restaurant / cafe
+2025-11-17,Dining out,13.72,Restaurant / cafe
+2025-11-21,Groceries,74.46,Grocery store
+2025-11-22,Entertainment,37.98,Events / movies
+2025-11-23,Shopping,39.34,Clothes / online order
+2025-11-23,Shopping,37.32,Clothes / online order
+2025-11-26,Entertainment,42.42,Events / movies
+2025-11-26,Dining out,14.42,Restaurant / cafe
+2025-11-26,Dining out,27.25,Restaurant / cafe
+2025-11-28,Groceries,63.76,Grocery store
+2025-11-28,Dining out,38.94,Restaurant / cafe
+2025-11-29,Shopping,20.96,Clothes / online order
+2025-12-01,Entertainment,24.93,Events / movies
+2025-12-01,Dining out,21.08,Restaurant / cafe
+2025-12-01,Rent,1196.0,Apartment rent
+2025-12-05,Utilities & phone,91.69,"Electric, internet, phone"
+2025-12-07,Dining out,31.01,Restaurant / cafe
+2025-12-07,Dining out,15.95,Restaurant / cafe
+2025-12-07,Transport,8.42,Rideshare / transit
+2025-12-08,Dining out,56.59,Restaurant / cafe
+2025-12-09,Shopping,28.87,Clothes / online order
+2025-12-09,Entertainment,20.16,Events / movies
+2025-12-09,Transport,13.0,Rideshare / transit
+2025-12-09,Dining out,17.62,Restaurant / cafe
+2025-12-10,Subscriptions,33.97,"Streaming, cloud storage"
+2025-12-12,Groceries,50.78,Grocery store
+2025-12-12,Shopping,71.9,Clothes / online order
+2025-12-13,Dining out,7.48,Restaurant / cafe
+2025-12-15,Travel,630.19,Flights / trips home
+2025-12-15,Dining out,18.36,Restaurant / cafe
+2025-12-17,Groceries,43.18,Grocery store
+2025-12-17,Dining out,24.05,Restaurant / cafe
+2025-12-17,Groceries,20.9,Grocery store
+2025-12-17,Groceries,20.57,Grocery store
+2025-12-18,Transport,11.15,Rideshare / transit
+2025-12-21,Dining out,25.2,Restaurant / cafe
+2025-12-22,Dining out,12.9,Restaurant / cafe
+2025-12-23,Groceries,45.64,Grocery store
+2025-12-26,Entertainment,20.29,Events / movies
+2025-12-27,Dining out,22.25,Restaurant / cafe
+2025-12-27,Dining out,12.32,Restaurant / cafe
+2026-01-01,Rent,1196.0,Apartment rent
+2026-01-02,Dining out,13.98,Restaurant / cafe
+2026-01-03,Dining out,33.88,Restaurant / cafe
+2026-01-03,Groceries,85.11,Grocery store
+2026-01-04,Dining out,39.42,Restaurant / cafe
+2026-01-05,Dining out,13.21,Restaurant / cafe
+2026-01-05,Shopping,87.07,Clothes / online order
+2026-01-05,Utilities & phone,105.63,"Electric, internet, phone"
+2026-01-06,Dining out,42.83,Restaurant / cafe
+2026-01-09,Dining out,12.76,Restaurant / cafe
+2026-01-10,Transport,6.65,Rideshare / transit
+2026-01-10,Subscriptions,33.97,"Streaming, cloud storage"
+2026-01-12,Shopping,76.5,Clothes / online order
+2026-01-13,Transport,3.01,Rideshare / transit
+2026-01-13,Books & school,292.55,"Textbooks, supplies"
+2026-01-13,Dining out,21.01,Restaurant / cafe
+2026-01-13,Dining out,25.42,Restaurant / cafe
+2026-01-13,Groceries,48.98,Grocery store
+2026-01-14,Dining out,12.59,Restaurant / cafe
+2026-01-15,Shopping,101.33,Clothes / online order
+2026-01-16,Transport,26.18,Rideshare / transit
+2026-01-17,Groceries,65.6,Grocery store
+2026-01-19,Entertainment,9.24,Events / movies
+2026-01-22,Shopping,28.8,Clothes / online order
+2026-01-25,Shopping,57.85,Clothes / online order
+2026-01-28,Dining out,14.38,Restaurant / cafe
+2026-01-30,Groceries,66.49,Grocery store
+2026-01-30,Groceries,49.85,Grocery store
+2026-02-01,Transport,7.04,Rideshare / transit
+2026-02-01,Shopping,134.14,Clothes / online order
+2026-02-01,Rent,1196.0,Apartment rent
+2026-02-02,Dining out,52.9,Restaurant / cafe
+2026-02-02,Dining out,31.49,Restaurant / cafe
+2026-02-03,Shopping,25.09,Clothes / online order
+2026-02-04,Dining out,45.56,Restaurant / cafe
+2026-02-04,Transport,18.87,Rideshare / transit
+2026-02-05,Utilities & phone,117.57,"Electric, internet, phone"
+2026-02-07,Dining out,15.42,Restaurant / cafe
+2026-02-08,Entertainment,7.32,Events / movies
+2026-02-08,Dining out,16.75,Restaurant / cafe
+2026-02-09,Shopping,4.46,Clothes / online order
+2026-02-09,Dining out,14.93,Restaurant / cafe
+2026-02-09,Transport,2.57,Rideshare / transit
+2026-02-10,Subscriptions,33.97,"Streaming, cloud storage"
+2026-02-12,Transport,13.28,Rideshare / transit
+2026-02-16,Dining out,56.93,Restaurant / cafe
+2026-02-17,Shopping,40.94,Clothes / online order
+2026-02-18,Entertainment,3.26,Events / movies
+2026-02-19,Dining out,23.61,Restaurant / cafe
+2026-02-19,Dining out,17.49,Restaurant / cafe
+2026-02-22,Dining out,24.28,Restaurant / cafe
+2026-02-23,Groceries,103.4,Grocery store
+2026-02-24,Dining out,29.89,Restaurant / cafe
+2026-02-25,Entertainment,29.12,Events / movies
+2026-02-25,Dining out,6.36,Restaurant / cafe
+2026-02-27,Groceries,65.67,Grocery store
+2026-02-27,Dining out,23.79,Restaurant / cafe
+2026-02-28,Dining out,38.25,Restaurant / cafe
+2026-03-01,Rent,1196.0,Apartment rent
+2026-03-01,Dining out,26.01,Restaurant / cafe
+2026-03-04,Entertainment,28.93,Events / movies
+2026-03-05,Utilities & phone,93.8,"Electric, internet, phone"
+2026-03-06,Groceries,38.15,Grocery store
+2026-03-09,Entertainment,17.95,Events / movies
+2026-03-09,Dining out,7.89,Restaurant / cafe
+2026-03-09,Transport,39.4,Rideshare / transit
+2026-03-09,Groceries,86.11,Grocery store
+2026-03-10,Subscriptions,33.97,"Streaming, cloud storage"
+2026-03-11,Groceries,27.99,Grocery store
+2026-03-11,Entertainment,36.25,Events / movies
+2026-03-11,Transport,8.61,Rideshare / transit
+2026-03-12,Transport,5.73,Rideshare / transit
+2026-03-14,Transport,3.42,Rideshare / transit
+2026-03-16,Groceries,33.62,Grocery store
+2026-03-19,Dining out,41.55,Restaurant / cafe
+2026-03-20,Dining out,43.62,Restaurant / cafe
+2026-03-20,Dining out,15.7,Restaurant / cafe
+2026-03-21,Entertainment,56.24,Events / movies
+2026-03-21,Dining out,19.85,Restaurant / cafe
+2026-03-23,Shopping,141.62,Clothes / online order
+2026-03-28,Shopping,73.25,Clothes / online order
+2026-03-29,Dining out,22.2,Restaurant / cafe
+2026-03-31,Transport,12.83,Rideshare / transit
+2026-04-01,Rent,1196.0,Apartment rent
+2026-04-02,Transport,16.13,Rideshare / transit
+2026-04-03,Dining out,61.22,Restaurant / cafe
+2026-04-03,Dining out,27.44,Restaurant / cafe
+2026-04-03,Groceries,88.97,Grocery store
+2026-04-03,Groceries,37.51,Grocery store
+2026-04-04,Dining out,22.58,Restaurant / cafe
+2026-04-04,Dining out,25.58,Restaurant / cafe
+2026-04-04,Shopping,36.75,Clothes / online order
+2026-04-05,Groceries,66.41,Grocery store
+2026-04-05,Transport,1.68,Rideshare / transit
+2026-04-05,Utilities & phone,89.75,"Electric, internet, phone"
+2026-04-08,Transport,3.77,Rideshare / transit
+2026-04-10,Subscriptions,33.97,"Streaming, cloud storage"
+2026-04-10,Transport,2.48,Rideshare / transit
+2026-04-12,Transport,4.38,Rideshare / transit
+2026-04-13,Dining out,28.59,Restaurant / cafe
+2026-04-13,Entertainment,17.55,Events / movies
+2026-04-13,Transport,1.31,Rideshare / transit
+2026-04-13,Dining out,10.44,Restaurant / cafe
+2026-04-14,Dining out,20.73,Restaurant / cafe
+2026-04-14,Transport,5.67,Rideshare / transit
+2026-04-15,Groceries,46.64,Grocery store
+2026-04-16,Shopping,18.09,Clothes / online order
+2026-04-18,Groceries,19.19,Grocery store
+2026-04-19,Dining out,41.42,Restaurant / cafe
+2026-04-19,Dining out,23.08,Restaurant / cafe
+2026-04-19,Dining out,12.43,Restaurant / cafe
+2026-04-22,Dining out,42.91,Restaurant / cafe
+2026-04-25,Dining out,45.35,Restaurant / cafe
+2026-04-27,Entertainment,38.6,Events / movies
+2026-04-27,Transport,1.07,Rideshare / transit
+2026-04-28,Groceries,71.98,Grocery store
+2026-05-01,Rent,1196.0,Apartment rent
+2026-05-02,Groceries,79.75,Grocery store
+2026-05-03,Groceries,51.49,Grocery store
+2026-05-03,Groceries,26.67,Grocery store
+2026-05-04,Shopping,27.12,Clothes / online order
+2026-05-05,Utilities & phone,95.71,"Electric, internet, phone"
+2026-05-05,Entertainment,13.2,Events / movies
+2026-05-05,Groceries,43.67,Grocery store
+2026-05-06,Travel,397.39,Flights / trips home
+2026-05-06,Shopping,15.17,Clothes / online order
+2026-05-07,Groceries,55.31,Grocery store
+2026-05-08,Shopping,77.63,Clothes / online order
+2026-05-09,Transport,3.42,Rideshare / transit
+2026-05-10,Subscriptions,33.97,"Streaming, cloud storage"
+2026-05-11,Dining out,13.61,Restaurant / cafe
+2026-05-13,Shopping,41.81,Clothes / online order
+2026-05-13,Shopping,22.72,Clothes / online order
+2026-05-18,Transport,1.96,Rideshare / transit
+2026-05-18,Shopping,46.54,Clothes / online order
+2026-05-19,Transport,16.07,Rideshare / transit
+2026-05-19,Groceries,33.76,Grocery store
+2026-05-19,Entertainment,45.84,Events / movies
+2026-05-22,Dining out,11.19,Restaurant / cafe
+2026-05-24,Dining out,23.49,Restaurant / cafe
+2026-05-28,Transport,12.88,Rideshare / transit
+2026-05-29,Transport,16.67,Rideshare / transit
+2026-05-31,Groceries,54.89,Grocery store
+2026-06-01,Rent,728.0,Apartment rent
+2026-06-05,Utilities & phone,91.93,"Electric, internet, phone"
+2026-06-05,Transport,8.07,Rideshare / transit
+2026-06-08,Shopping,6.75,Clothes / online order
+2026-06-09,Transport,15.14,Rideshare / transit
+2026-06-09,Transport,9.86,Rideshare / transit
+2026-06-09,Shopping,67.63,Clothes / online order
+2026-06-10,Groceries,45.64,Grocery store
+2026-06-10,Subscriptions,33.97,"Streaming, cloud storage"
+2026-06-14,Groceries,38.76,Grocery store
+2026-06-14,Transport,17.67,Rideshare / transit
+2026-06-15,Shopping,14.11,Clothes / online order
+2026-06-19,Shopping,30.83,Clothes / online order
+2026-06-29,Entertainment,36.06,Events / movies
+2026-07-01,Rent,728.0,Apartment rent
+2026-07-03,Dining out,25.71,Restaurant / cafe
+2026-07-05,Utilities & phone,115.48,"Electric, internet, phone"
+2026-07-06,Groceries,19.22,Grocery store
+2026-07-08,Shopping,62.22,Clothes / online order
+2026-07-10,Subscriptions,33.97,"Streaming, cloud storage"
+2026-07-11,Entertainment,27.14,Events / movies
+2026-07-12,Shopping,28.7,Clothes / online order
+2026-07-15,Dining out,23.32,Restaurant / cafe
+2026-07-17,Transport,19.51,Rideshare / transit
+2026-07-20,Dining out,31.77,Restaurant / cafe
+2026-07-20,Groceries,45.99,Grocery store
+2026-07-20,Dining out,33.88,Restaurant / cafe
+2026-07-21,Entertainment,30.57,Events / movies
+2026-07-23,Transport,11.44,Rideshare / transit
+2026-07-29,Groceries,35.99,Grocery store
+2026-07-31,Groceries,54.1,Grocery store
+2026-07-31,Entertainment,25.88,Events / movies
+2026-08-01,Rent,1196.0,Apartment rent
+2026-08-03,Groceries,51.65,Grocery store
+2026-08-05,Utilities & phone,123.17,"Electric, internet, phone"
+2026-08-05,Entertainment,15.42,Events / movies
+2026-08-08,Groceries,50.56,Grocery store
+2026-08-09,Transport,7.76,Rideshare / transit
+2026-08-10,Dining out,13.09,Restaurant / cafe
+2026-08-10,Subscriptions,33.97,"Streaming, cloud storage"
+2026-08-11,Transport,26.22,Rideshare / transit
+2026-08-13,Books & school,243.56,"Textbooks, supplies"
+2026-08-14,Groceries,25.94,Grocery store
+2026-08-14,Transport,0.9,Rideshare / transit
+2026-08-15,Groceries,84.37,Grocery store
+2026-08-19,Travel,486.0,Flights / trips home
+2026-08-20,Transport,2.27,Rideshare / transit
+2026-08-23,Dining out,22.88,Restaurant / cafe
+2026-08-25,Transport,12.56,Rideshare / transit
+2026-08-28,Transport,5.08,Rideshare / transit
+2026-08-29,Entertainment,41.19,Events / movies
+2026-09-01,Rent,1196.0,Apartment rent
+2026-09-01,Transport,3.13,Rideshare / transit
+2026-09-02,Dining out,34.36,Restaurant / cafe
+2026-09-03,Shopping,92.57,Clothes / online order
+2026-09-04,Transport,7.65,Rideshare / transit
+2026-09-05,Shopping,28.9,Clothes / online order
+2026-09-05,Utilities & phone,82.77,"Electric, internet, phone"
+2026-09-06,Shopping,62.91,Clothes / online order
+2026-09-07,Dining out,12.35,Restaurant / cafe
+2026-09-07,Dining out,7.1,Restaurant / cafe
+2026-09-07,Transport,13.46,Rideshare / transit
+2026-09-09,Dining out,8.02,Restaurant / cafe
+2026-09-09,Dining out,19.96,Restaurant / cafe
+2026-09-09,Dining out,26.46,Restaurant / cafe
+2026-09-10,Subscriptions,33.97,"Streaming, cloud storage"
+2026-09-10,Entertainment,21.62,Events / movies
+2026-09-11,Dining out,35.65,Restaurant / cafe
+2026-09-11,Dining out,24.36,Restaurant / cafe
+2026-09-11,Shopping,45.9,Clothes / online order
+2026-09-11,Transport,8.64,Rideshare / transit
+2026-09-14,Entertainment,33.4,Events / movies
+2026-09-15,Shopping,150.84,Clothes / online order
+2026-09-16,Groceries,37.22,Grocery store
+2026-09-16,Transport,17.15,Rideshare / transit
+2026-09-16,Dining out,25.95,Restaurant / cafe
+2026-09-18,Dining out,25.92,Restaurant / cafe
+2026-09-19,Dining out,7.6,Restaurant / cafe
+2026-09-20,Transport,13.25,Rideshare / transit
+2026-09-20,Shopping,99.12,Clothes / online order
+2026-09-21,Entertainment,28.51,Events / movies
+2026-09-25,Dining out,18.42,Restaurant / cafe
+2026-09-27,Dining out,34.81,Restaurant / cafe
+2026-09-27,Entertainment,30.45,Events / movies
+2026-09-28,Groceries,55.19,Grocery store
+2026-09-29,Dining out,24.64,Restaurant / cafe
+2026-09-30,Groceries,45.35,Grocery store
+2026-09-30,Shopping,14.39,Clothes / online order
+2026-10-01,Transport,5.41,Rideshare / transit
+2026-10-01,Rent,1196.0,Apartment rent
+2026-10-03,Transport,3.97,Rideshare / transit
+2026-10-05,Utilities & phone,114.69,"Electric, internet, phone"
+2026-10-06,Shopping,25.73,Clothes / online order
+2026-10-06,Groceries,59.22,Grocery store
+2026-10-10,Subscriptions,33.97,"Streaming, cloud storage"
+2026-10-11,Transport,30.7,Rideshare / transit
+2026-10-12,Dining out,3.88,Restaurant / cafe
+2026-10-13,Transport,14.64,Rideshare / transit
+2026-10-13,Groceries,79.36,Grocery store
+2026-10-15,Shopping,41.74,Clothes / online order
+2026-10-16,Groceries,56.67,Grocery store
+2026-10-17,Entertainment,30.72,Events / movies
+2026-10-17,Entertainment,9.06,Events / movies
+2026-10-18,Groceries,70.81,Grocery store
+2026-10-26,Shopping,21.91,Clothes / online order
+2026-10-26,Shopping,64.95,Clothes / online order
+2026-10-26,Groceries,74.76,Grocery store
+2026-10-28,Dining out,16.21,Restaurant / cafe
+2026-10-29,Dining out,25.48,Restaurant / cafe
+2026-10-31,Dining out,31.34,Restaurant / cafe
